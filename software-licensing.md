@@ -1,11 +1,27 @@
-# licensing
+# What license should I use for my code? And why do I need a license anyway?
 
-What license should I use for this repo? That is the question I'm trying to answer here, and as I have found recently, the rabbit hole goes deep.
+Something I haven't thought much about. I've mostly defaulted to using the "MIT License" (the "simple and permissive" option at https://choosealicense.com/), but is that really the best option for me? There are a lot of options out there.
 
-(That's one of the initial questions when creating a repo here on github.)
+But before getting into it, a disclaimer:
+
+I am a Software Engineer, NOT A LAWYER, and I make mistakes like everyone else. The information provided on this page does not, and is not intended to, constitute legal advice. This information is for general purposes only, and may not constitute the most up-to-date legal or other information. Readers should contact their attorney to obtain advice with respect to any particular legal matter.
+
+(https://law.stackexchange.com/questions/683/usa-is-i-am-not-a-lawyer-disclaimer-generally-necessary)
 
 
-## default - no license
+Seriously, talk to a lawyer. Even GitHub's purpose-built site to help developers choose an open source license for their projects says ["No legal advice is being provided"](https://choosealicense.com/terms-of-service/).
+
+
+Ok, gotta get that out of the way up front, because from all that I've read it seems that the license I choose _does_ have legal ramifications.
+
+But first, before getting into licenses, what about the default — what if I don't use a license?
+
+
+## What if I don't include a license with my code?
+
+TODO
+
+(This is the default)
 
 What if I don't add a license to this software? What does that mean?
 
@@ -74,5 +90,11 @@ TODO
 ## how should I choose a license?
 
 https://choosealicense.com/ seems maybe too simplistic?
+
+https://choosealicense.com/about/
+
+https://www.infoworld.com/article/2611422/github-finally-takes-open-source-licenses-seriously.html
+
+https://opensource.com/law/13/8/github-poss-licensing
 
 TODO
