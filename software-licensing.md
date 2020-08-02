@@ -1,15 +1,15 @@
 # What license should I use for my code? And why do I need a license anyway?
 
-Something I haven't thought much about. I've mostly defaulted to using the "MIT License" (the "simple and permissive" option at https://choosealicense.com/), but is that really the best option for me? There are a lot of options out there.
+Something I haven't thought much about. I've mostly defaulted to using the "MIT License" (the "simple and permissive" option at [choosealicense.com](https://choosealicense.com/)), but is that really my best option? There are a lot of licenses out there.
 
 But before getting into it, a disclaimer:
 
-I am a Software Engineer, NOT A LAWYER, and I make mistakes like everyone else. The information provided on this page does not, and is not intended to, constitute legal advice. This information is for general purposes only, and may not constitute the most up-to-date legal or other information. Readers should contact their attorney to obtain advice with respect to any particular legal matter.
+> I am a Software Engineer, NOT A LAWYER. The information on this page is provided "as-is", for general purposes only, and does not, and is not intended to, constitute legal advice. Readers should contact their attorney to obtain advice with respect to any particular legal matter.
 
 (https://law.stackexchange.com/questions/683/usa-is-i-am-not-a-lawyer-disclaimer-generally-necessary)
 
 
-Seriously, talk to a lawyer. Even GitHub's purpose-built site to help developers choose an open source license for their projects says ["No legal advice is being provided"](https://choosealicense.com/terms-of-service/).
+Seriously, this is on you, talk to a lawyer. Even GitHub's purpose-built site to help developers choose an open source license for their projects says ["No legal advice is being provided"](https://choosealicense.com/terms-of-service/).
 
 
 Ok, gotta get that out of the way up front, because from all that I've read it seems that the license I choose _does_ have legal ramifications.
@@ -98,3 +98,26 @@ https://www.infoworld.com/article/2611422/github-finally-takes-open-source-licen
 https://opensource.com/law/13/8/github-poss-licensing
 
 TODO
+
+
+## Other links/resources
+
+For more reading & research
+
+* https://choosealicense.com/appendix/
+* https://choosealicense.com/licenses/unlicense/
+* https://choosealicense.com/licenses/cc0-1.0/
+* https://creativecommons.org/choose/
+* https://quorten.github.io/quorten-blog1/blog/2018/05/29/cc0-or-unlicense
+* https://softwareengineering.stackexchange.com/questions/147111/what-is-wrong-with-the-unlicense
+* https://softwareengineering.stackexchange.com/questions/182137/whats-the-difference-between-wtfpl-cc0-and-public-domain
+* https://github.com/docopt/docopt.rs/issues/1 - lots of good links and discussion here
+* http://copyfree.org/standard/licenses
+* http://copyfree.org/standard/rejected
+* https://exygy.com/blog/which-license-should-i-use-mit-vs-apache-vs-gpl/
+* https://www.quora.com/Whats-the-difference-between-Apache-v2-0-and-MIT-license-What-are-the-major-consequences-of-using-Apache-software-over-MIT
+* https://www.thebalancesmb.com/what-is-automatic-copyright-protection-3514945
+* https://www.quora.com/What-exactly-is-dangerous-about-using-MIT-Licensed-software
+* https://www.quora.com/What-is-an-unlicense-license
+* https://fairuse.stanford.edu/overview/faqs/software/
+* https://fairuse.stanford.edu/overview/faqs/copyright-protection/
