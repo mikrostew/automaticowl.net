@@ -121,3 +121,18 @@ For more reading & research
 * https://www.quora.com/What-is-an-unlicense-license
 * https://fairuse.stanford.edu/overview/faqs/software/
 * https://fairuse.stanford.edu/overview/faqs/copyright-protection/
+* https://softwarefreedom.org/resources/2012/ManagingCopyrightInformation.html
+* https://producingoss.com/en/index.html
+
+From OSI
+
+* https://opensource.org/licenses (popular licenses)
+* https://opensource.org/licenses/alphabetical (all licenses)
+* https://opensource.org/faq (lots of good info and links here)
+
+Contributor Agreements, and other legal things
+
+* http://wiki.civiccommons.org/Contributor_Agreements/
+* https://producingoss.com/en/contributor-agreements.html (what happens with no CLAs, like the SCO-Linux situation)
+* https://producingoss.com/en/legal.html
+* http://harmonyagreements.org/
