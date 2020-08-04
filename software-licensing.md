@@ -136,3 +136,5 @@ Contributor Agreements, and other legal things
 * https://producingoss.com/en/contributor-agreements.html (what happens with no CLAs, like the SCO-Linux situation)
 * https://producingoss.com/en/legal.html
 * http://harmonyagreements.org/
+
+Tool for managing dependencies and viewing all licenses in a project: https://fossa.com/ (found via https://github.com/hexojs/hexo#license)
