@@ -5,5 +5,9 @@
   "repository": "git@github.com:mikrostew/automaticowl.net.git",
   "author": "Michael Stewart <mikrostew@gmail.com>",
   "license": "not yet",
-  "private": false
+  "private": false,
+  "volta": {
+    "node": "12.18.3",
+    "yarn": "1.22.4"
+  }
 }
