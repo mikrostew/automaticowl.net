@@ -1,0 +1,9 @@
+{
+  "name": "automaticowl.net",
+  "version": "0.0.1",
+  "description": "mikrostew's website",
+  "repository": "git@github.com:mikrostew/automaticowl.net.git",
+  "author": "Michael Stewart <mikrostew@gmail.com>",
+  "license": "not yet",
+  "private": false
+}
