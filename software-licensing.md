@@ -1,3 +1,7 @@
+---
+layout: layouts/base.hbs
+---
+
 # What license should I use for my code? And why do I need a license anyway?
 
 Something I haven't thought much about. I've mostly defaulted to using the "MIT License" (the "simple and permissive" option at [choosealicense.com](https://choosealicense.com/)), but is that really my best option? There are a lot of licenses out there.
@@ -82,7 +86,7 @@ Because I want to let other people use my code, without them having to explicitl
 
 https://en.wikipedia.org/wiki/Software_license
 
-> A typical software license grants the licensee, typically an end-user, permission to use one or more copies of software in ways where such a use would otherwise potentially constitute copyright infringement of the software owner's exclusive rights under copyright. 
+> A typical software license grants the licensee, typically an end-user, permission to use one or more copies of software in ways where such a use would otherwise potentially constitute copyright infringement of the software owner's exclusive rights under copyright.
 
 TODO
 
