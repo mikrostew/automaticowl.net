@@ -1,2 +1,5 @@
 # the generated website
 _site/
+
+# dependencies
+node_modules/
