@@ -8,9 +8,11 @@ Something I haven't thought much about. I've mostly defaulted to using the "MIT 
 
 But before getting into it, a disclaimer:
 
-> I am a Software Engineer, NOT A LAWYER[^not-a-lawyer]. The information on this page is provided "as-is", for general purposes only, and does not, and is not intended to, constitute legal advice. Readers should contact their attorney to obtain advice with respect to any particular legal matter.
+> I am a Software Engineer, not a Lawyer[^not-a-lawyer]. The information on this page is provided "as-is", for general purposes only, and does not, and is not intended to, constitute legal advice. Readers should contact their attorney to obtain advice with respect to any particular legal matter.
 
-[^not-a-lawyer]: https://law.stackexchange.com/questions/683/usa-is-i-am-not-a-lawyer-disclaimer-generally-necessary
+[^not-a-lawyer]: From https://law.stackexchange.com/a/699:
+
+    …you would certainly be in a better position if you said: "But I'm not a lawyer, so you should seek professional advice"; not so much because you told them you weren't a lawyer but rather because this changes your advice to "seek professional advice". It's impossible to be wrong with that advice!
 
 
 Seriously, this is on you, talk to a lawyer. Even GitHub's purpose-built site to help developers choose an open source license for their projects says ["No legal advice is being provided"](https://choosealicense.com/terms-of-service/).
