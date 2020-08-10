@@ -2,7 +2,11 @@
 layout: layouts/base.hbs
 ---
 
-# What license should I use for my code? And why do I need a license anyway?
+# What license should I use for my code?
+
+TODO: short and sweet guidelines up top, kinda like [choosealicense.com](https://choosealicense.com/), but with some more options and links to further discussion below.
+
+TODO: table-of-contents-style links here, for looking up more info in the sections below
 
 Something I haven't thought much about. I've mostly defaulted to using the "MIT License" (the "simple and permissive" option at [choosealicense.com](https://choosealicense.com/)), but is that really my best option? There are a lot of licenses out there.
 
@@ -153,3 +157,5 @@ Dual licensing
 * https://resources.whitesourcesoftware.com/blog-whitesource/dual-licensing-for-open-source-components-yeah-or-meh
 * https://www.synopsys.com/blogs/software-security/software-licensing-decisions-consider-dual-licensing/
 * https://en.wikipedia.org/wiki/Multi-licensing
+* https://opensource.stackexchange.com/questions/5599/any-successful-dual-license-oss-project-i-can-use-as-template
+* https://www.oreilly.com/library/view/open-source-for/0596101198/ch08s07.html
