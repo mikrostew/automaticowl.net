@@ -144,3 +144,12 @@ Contributor Agreements, and other legal things
 * http://harmonyagreements.org/
 
 Tool for managing dependencies and viewing all licenses in a project: https://fossa.com/ (found via https://github.com/hexojs/hexo#license)
+
+Dual licensing
+
+* https://internals.rust-lang.org/t/rationale-of-apache-dual-licensing/8952
+* https://www.reddit.com/r/opensource/comments/81n4e2/dual_licensing_with_mit_and_apache/
+* https://github.com/rust-lang/rust-forge/issues/241
+* https://resources.whitesourcesoftware.com/blog-whitesource/dual-licensing-for-open-source-components-yeah-or-meh
+* https://www.synopsys.com/blogs/software-security/software-licensing-decisions-consider-dual-licensing/
+* https://en.wikipedia.org/wiki/Multi-licensing
