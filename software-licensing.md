@@ -8,7 +8,7 @@ TODO: short and sweet guidelines up top, kinda like [choosealicense.com](https:/
 
 TODO: table-of-contents-style links here, for looking up more info in the sections below
 
-Something I haven't thought much about. I've mostly defaulted to using the "MIT License" (the "simple and permissive" option at [choosealicense.com](https://choosealicense.com/)), but is that really my best option? There are a lot of licenses out there.
+> Something I haven't thought much about. I've mostly defaulted to using the "MIT License" (the "simple and permissive" option at [choosealicense.com](https://choosealicense.com/)), but is that really my best option? There are a lot of licenses out there.
 
 But before getting into it, a disclaimer:
 
@@ -159,3 +159,15 @@ Dual licensing
 * https://en.wikipedia.org/wiki/Multi-licensing
 * https://opensource.stackexchange.com/questions/5599/any-successful-dual-license-oss-project-i-can-use-as-template
 * https://www.oreilly.com/library/view/open-source-for/0596101198/ch08s07.html
+
+License compatibility
+
+* https://en.wikipedia.org/wiki/License_compatibility
+* https://www.gnu.org/licenses/license-compatibility.en.html
+* https://www.gnu.org/licenses/license-list.en.html
+* https://stackoverflow.com/questions/1978511/is-there-a-chart-of-which-oss-license-is-compatible-with-which
+
+Crayon licenses
+
+* https://opensource.stackexchange.com/questions/1445/how-can-a-crayon-license-be-a-problem
+* http://lists.opensource.org/pipermail/license-discuss_lists.opensource.org/2011-December/017416.html
