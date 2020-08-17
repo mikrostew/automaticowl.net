@@ -18,8 +18,20 @@ function runChecks(files) {
       {
         title: `Check MD files (${filesMD.length})`,
         enabled: () => filesMD.length !== 0,
-        task: (ctx, task) => {
-          task.skip('No checks enabled yet');
+        task: (/*ctx, task*/) => {
+          // create concurrent tasks for every file
+          return new Listr(
+            filesMD.map((f) => {
+              return {
+                title: `file ${f}`,
+                task: (/*ctx, task*/) =>
+                  execa('yarn', ['prettier', '--write', f])
+                    // re-add the file in case it was modified
+                    .then(() => execa('git', ['add', f])),
+              };
+            }),
+            { concurrent: true }
+          );
         },
       },
       {
