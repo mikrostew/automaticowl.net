@@ -1,6 +1,8 @@
 // Checks and fixes to run in pre-commit
 
 const chalk = require('chalk');
+const execa = require('execa');
+const process = require('process');
 const Listr = require('listr');
 const getStagedFiles = require('./lib/git-staged-files');
 
@@ -23,8 +25,21 @@ function runChecks(files) {
       {
         title: `Check JS files (${filesJS.length})`,
         enabled: () => filesJS.length !== 0,
-        task: (ctx, task) => {
-          task.skip('No checks enabled yet');
+        task: (/*ctx, task*/) => {
+          // create concurrent tasks for every file
+          return new Listr(
+            filesJS.map((f) => {
+              return {
+                title: `file ${f}`,
+                task: (/*ctx, task*/) =>
+                  execa('yarn', ['eslint', '--fix', f])
+                    .then(() => execa('yarn', ['prettier', '--write', f]))
+                    // re-add the file in case it was modified
+                    .then(() => execa('git', ['add', f])),
+              };
+            }),
+            { concurrent: true }
+          );
         },
       },
       {
