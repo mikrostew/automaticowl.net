@@ -1,0 +1,5 @@
+# it doesn't know how to format these
+*.hbs
+
+# don't format the generated site
+_site/
