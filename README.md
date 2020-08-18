@@ -21,7 +21,9 @@ I don't have any CSS yet, and I'm kinda liking the old-school look of the site a
 
 ### linting & formatting
 
-I use [husky](https://github.com/typicode/husky) to setup [git hooks](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks) that run automated checks and fixes for `git commit` and `git push`. These checks are managed by [listr](https://github.com/SamVerschueren/listr):
+I use [lefthook](https://github.com/Arkweid/lefthook) to run [git hooks](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks) for pre-commit that run linting and formatting:
 
-- JavaScript linting with [ESLint](https://github.com/eslint/eslint) (`eslint --fix`), and [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier)
-- JavaScript and MarkDown formatting with [prettier]() (`prettier --write`)
+- JavaScript linting with [ESLint](https://github.com/eslint/eslint), and [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier)
+- JavaScript and MarkDown formatting with [prettier](https://github.com/prettier/prettier)
+
+(I previously used [husky](https://github.com/typicode/husky) and [listr](https://github.com/SamVerschueren/listr) for these checks, but I found that lefthook is much faster, which is critical for my workflow. Waiting 3+ seconds for these to run is too painful, and lefthook consistently runs in less than a second for me.)
