@@ -26,4 +26,4 @@ I use [lefthook](https://github.com/Arkweid/lefthook) to run [git hooks](https:/
 - JavaScript linting with [ESLint](https://github.com/eslint/eslint), and [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier)
 - JavaScript and MarkDown formatting with [prettier](https://github.com/prettier/prettier)
 
-(I previously used [husky](https://github.com/typicode/husky) and [listr](https://github.com/SamVerschueren/listr) for these checks, but I found that lefthook is much faster, which is critical for my workflow. Waiting 3+ seconds for these to run is too painful, and lefthook consistently runs in less than a second for me.)
+(I previously used [husky](https://github.com/typicode/husky) and [listr](https://github.com/SamVerschueren/listr) for these checks, but I found that lefthook is faster, which is critical for my workflow.)

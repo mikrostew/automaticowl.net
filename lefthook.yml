@@ -50,7 +50,7 @@ pre-commit:
     prettier-md:
       glob: "*.md"
       run: yarn prettier --write {staged_files}
-    re-add-js:
+    re-add-md:
       glob: "*.md"
       run: git add {staged_files}
 
