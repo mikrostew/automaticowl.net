@@ -8,7 +8,18 @@ TODO: short and sweet guidelines up top, kinda like [choosealicense.com](https:/
 
 TODO: table-of-contents-style links here, for looking up more info in the sections below
 
-> Something I haven't thought much about. I've mostly defaulted to using the "MIT License" (the "simple and permissive" option at [choosealicense.com](https://choosealicense.com/)), but is that really my best option? There are a lot of licenses out there.
+<div class="epigraph">
+
+> A little learning is a dangerous thing;<br>
+> Drink deep, or taste not the Pierian spring.<br>
+> There shallow draughts intoxicate the brain,<br>
+> And drinking largely sobers us again.<br>
+>
+> Alexander Pope, "[A Little Learning](https://www.poetsgraves.co.uk/Classic%20Poems/Pope/a_little_learning.htm)"
+
+</div>
+
+Something I haven't thought much about. I've mostly defaulted to using the "MIT License" (the "simple and permissive" option at [choosealicense.com](https://choosealicense.com/)), but is that really my best option? There are a lot of licenses out there.
 
 But before getting into it, a disclaimer:
 
