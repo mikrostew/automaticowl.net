@@ -46,11 +46,3 @@ pre-commit:
     re-add-js:
       glob: "*.{js,ts}"
       run: git add {staged_files}
-    # MarkDown
-    prettier-md:
-      glob: "*.md"
-      run: yarn prettier --write {staged_files}
-    re-add-md:
-      glob: "*.md"
-      run: git add {staged_files}
-
