@@ -23,7 +23,9 @@ TODO: I'd like to make it so you can append ".md" to any page URL, and get the m
 
 ### layouts
 
-I use [handlebars](https://github.com/handlebars-lang/handlebars.js) for my [page layouts](https://github.com/mikrostew/automaticowl.net/tree/master/_includes/layouts). It's simple and fast, and I'm familiar with it from other projects.
+I use [nunjucks](https://mozilla.github.io/nunjucks/) for my [page layouts](https://github.com/mikrostew/automaticowl.net/tree/master/_includes/layouts). I had never heard of this templating language before using eleventy, but I like how it works and most things have been easy to figure out.
+
+I initially used [handlebars](https://github.com/handlebars-lang/handlebars.js) for layouts, but it does not have eough features for what I want. Specifically, I wanted to inline an SVG, with a configurable width and height, and I couldn't see a way to do that.
 
 ### CSS
 

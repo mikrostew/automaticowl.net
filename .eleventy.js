@@ -1,4 +1,9 @@
 module.exports = function (eleventyConfig) {
+  // output directory: _site
+
+  // copy `img/` to `_site/img`
+  eleventyConfig.addPassthroughCopy('img');
+
   let markdownIt = require('markdown-it');
   let markdownItFootnote = require('markdown-it-footnote');
 

@@ -1,8 +1,8 @@
 ---
-layout: layouts/base.hbs
+layout: layouts/post.njk
+title: What license should I use for my code?
 ---
 
-# What license should I use for my code?
 
 TODO: short and sweet guidelines up top, kinda like [choosealicense.com](https://choosealicense.com/), but with some more options and links to further discussion below.
 
