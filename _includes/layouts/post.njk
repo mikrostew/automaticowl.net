@@ -1,5 +1,8 @@
 ---
 title: Automatic Owl
+
+# for automatic-owl-logo.svg
+owlLogoSize: 32px
 ---
 <!doctype html>
 <html lang="en">
@@ -11,8 +14,15 @@ title: Automatic Owl
   </head>
   <body>
     <header>
+      <div class="logo-and-name">
+        <a href="/" class="logo-and-name-link">
+          {% include "svg/automatic-owl-logo.svg" %}
+          <span>automatic owl</span>
+        </a>
+      </div>
       <h1>{{ title }}</h1>
     </header>
     {{ content | safe }}
+    <footer></footer>
   </body>
 </html>

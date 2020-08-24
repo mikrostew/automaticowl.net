@@ -1,0 +1,16 @@
+.logo-and-name {
+  display: flex;
+}
+
+.logo-and-name-link {
+  display: flex;
+  font-size: 24px;
+  font-feature-settings: 'smcp';
+  padding: 3px;
+  text-decoration: none;
+  color: black;
+}
+
+.logo-and-name-link > * {
+  margin: 3px;
+}
