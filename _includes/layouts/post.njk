@@ -14,15 +14,13 @@ owlLogoSize: 32px
   </head>
   <body>
     <header>
-      <div class="logo-and-name">
-        <a href="/" class="logo-and-name-link">
-          {% include "svg/automatic-owl-logo.svg" %}
-          <span>automatic owl</span>
-        </a>
-      </div>
+      <a href="/" class="header-link">automatic owl</a>
       <h1>{{ title }}</h1>
     </header>
     {{ content | safe }}
-    <footer></footer>
+    <footer>
+    <!-- TODO: flex layout here -->
+{% include "svg/automatic-owl-logo.svg" %}
+    </footer>
   </body>
 </html>
