@@ -21,7 +21,44 @@ The pages are written in [markdown](https://commonmark.org/), using the [markdow
 
 TODO: I'd like to make it so you can append ".md" to any page URL, and get the markdown for that page. I'm not sure how to do that yet, but it should be possible...
 
-### layouts
+### Fonts
+
+Status: in progress
+
+So far I've found some things that are not helpful:
+
+https://css-tricks.com/snippets/css/system-font-stack/ - interesting, but not helpful, because they are using sans-serif fonts, and I want serif
+
+https://github.com/jonathantneal/system-font-css/blob/gh-pages/system-font.css - another approach, but again they are using sans-serif
+
+https://markdotto.com/2018/02/07/github-system-fonts/ - sans-serif, again
+
+https://systemfontstack.com/ - this actually has a serif section, but I don't trust it, because it has things like "Apple Garamond", which is not a thing
+
+https://www.digitalocean.com/community/tutorials/css-system-font-stack - sans-serif
+
+https://gist.github.com/don1138/5761014 - sections for serif stacks, but I haven't found one I like yet...
+
+also, that ^^ looks similar to this:
+https://gist.github.com/001101/a8b0e5ce8fd81225bed7
+
+ugh, what a PITA
+
+
+fonts for Mac:
+
+- https://en.wikipedia.org/wiki/List_of_typefaces_included_with_macOS
+- https://support.apple.com/en-us/HT210192 - fonts included in Catalina
+
+I'm using Baskerville, which is old (like 1750s old) but I like it, and it's available on all Macs.
+
+https://www.lifewire.com/classic-serif-fonts-print-projects-1077407
+
+TODO: figure out fonts for windows, linux, android, iOS (ugh)
+
+
+
+### Layouts
 
 I use [nunjucks](https://mozilla.github.io/nunjucks/) for my [page layouts](https://github.com/mikrostew/automaticowl.net/tree/master/_includes/layouts). I had never heard of this templating language before using eleventy, but I like how it works and most things have been easy to figure out.
 
@@ -31,7 +68,7 @@ I initially used [handlebars](https://github.com/handlebars-lang/handlebars.js) 
 
 I roll my own CSS (no libraries, thanks, although [Tufte CSS](https://edwardtufte.github.io/tufte-css/) is tempting) and use [nunjucks](https://github.com/mozilla/nunjucks) for [super simple CSS concatenation](https://www.11ty.dev/docs/quicktips/concatenate/).
 
-### linting & formatting
+### Linting & Formatting
 
 I use [lefthook](https://github.com/Arkweid/lefthook) to run [git hooks](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks) for pre-commit that run linting and formatting:
 
