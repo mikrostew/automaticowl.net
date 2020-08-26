@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-title: What license should I use for my code?
+title: What software license should I use?
 ---
 
 

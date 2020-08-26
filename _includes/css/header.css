@@ -1,6 +1,8 @@
-.header-link {
+header {
   font-size: 24px;
-  font-weight: 300;
+}
+
+.header-link {
   font-feature-settings: 'smcp';
   text-decoration: none;
   color: black;
