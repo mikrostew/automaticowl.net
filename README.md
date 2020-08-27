@@ -54,8 +54,34 @@ I'm using Baskerville, which is old (like 1750s old) but I like it, and it's ava
 
 https://www.lifewire.com/classic-serif-fonts-print-projects-1077407
 
-TODO: figure out fonts for windows, linux, android, iOS (ugh)
+Palatino for Windows
 
+https://docs.microsoft.com/en-us/typography/font-list/palatino-linotype
+
+fonts on iOS
+
+http://iosfonts.com/
+
+fonts on Linux
+
+https://www.webfx.com/blog/web-design/a-web-designers-guide-to-linux-fonts/
+also, http://www.visibone.com/font/FontResults.html
+
+found one that worked from those pages ^^ (and found out that I was doing small caps wrong)
+
+
+also, https://askubuntu.com/questions/552979/how-can-i-determine-which-fonts-are-installed-from-the-command-line-and-what-is
+
+
+android
+
+https://stackoverflow.com/questions/29384114/what-fonts-are-installed-by-default-on-android
+
+
+overall
+
+Had to use virtualbox and VMs to figure out fonts, and accessing localhost from the VM is a pain
+https://superuser.com/questions/310697/connect-to-the-host-machine-from-a-virtualbox-guest-os
 
 
 ### Layouts

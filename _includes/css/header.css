@@ -3,7 +3,11 @@ header {
 }
 
 .header-link {
-  font-feature-settings: 'smcp';
+  /* apparently this shouldn't be used, oops */
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/font-feature-settings */
+  /* font-feature-settings: 'smcp'; */
+
+  font-variant: small-caps;
   text-decoration: none;
   color: black;
   margin: 10px 20px;
