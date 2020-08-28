@@ -20,6 +20,11 @@ body {
   font-size: 20px;
 }
 
+section.metadata {
+  font-size: 14px;
+  font-style: italic;
+}
+
 h1 {
   text-align: center;
   font-weight: normal;

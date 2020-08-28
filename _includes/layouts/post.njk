@@ -1,6 +1,11 @@
 ---
+#### Things that should be overridden by the page
 title: Automatic Owl
+initialCreationDate: 01 Jan 2020
+lastEditDate: 02 Jan 2020
+fileLocation: _includes/layouts/post.njk
 
+#### Things that should not be overridden
 # for automatic-owl-logo.svg
 owlLogoSize: 32px
 ---
@@ -15,9 +20,16 @@ owlLogoSize: 32px
   <body>
     <header>
       <a href="/" class="header-link">automatic owl</a>
-      <h1>{{ title }}</h1>
     </header>
-    {{ content | safe }}
+    <article>
+      <h1>{{ title }}</h1>
+      <section class="metadata">
+        <p><a href="https://github.com/mikrostew/automaticowl.net/commits/master/{{ fileLocation }}" title="See the history of this page">{{ initialCreationDate }} &ndash; {{ lastEditDate }}</a></p>
+      </section>
+      <section class="main">
+{{ content | safe }}
+      </section>
+    </article>
     <footer>
     <!-- TODO: flex layout here -->
 {% include "svg/automatic-owl-logo.svg" %}
