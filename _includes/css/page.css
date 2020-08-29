@@ -20,9 +20,15 @@ body {
   font-size: 20px;
 }
 
+a {
+  /* just make these the same as the text color */
+  color: black;
+}
+
 .metadata {
   font-style: italic;
   text-align: center;
+  margin: 40px 0;
 }
 
 .metadata-status {
@@ -38,7 +44,7 @@ h1 {
   text-align: center;
   font-weight: normal;
   font-size: 48px;
-  margin-top: 48px;
+  margin: 48px 0 40px 0;
 }
 
 h2 {
