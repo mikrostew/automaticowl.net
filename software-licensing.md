@@ -1,6 +1,12 @@
 ---
 layout: layouts/post.njk
-title: What software license should I use?
+title: Choosing an open source license
+summary: A concise guide, followed by an in-depth discussion of further considerations.
+status: In Progress
+fileLocation: software-licensing.md
+initialCreationDate: Jul 29, 2020
+lastEditDate: Aug 29, 2020
+
 ---
 
 

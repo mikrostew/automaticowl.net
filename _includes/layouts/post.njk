@@ -1,13 +1,16 @@
 ---
 #### Things that should be overridden by the page
 title: Automatic Owl
-initialCreationDate: 01 Jan 2020
-lastEditDate: 02 Jan 2020
+summary: Post template
+status: In Progress
 fileLocation: _includes/layouts/post.njk
+initialCreationDate: Jan 1, 2020
+lastEditDate: Jan 2, 2020
 
 #### Things that should not be overridden
 # for automatic-owl-logo.svg
 owlLogoSize: 32px
+
 ---
 <!doctype html>
 <html lang="en">
@@ -24,7 +27,8 @@ owlLogoSize: 32px
     <article>
       <h1>{{ title }}</h1>
       <section class="metadata">
-        <p><a href="https://github.com/mikrostew/automaticowl.net/commits/master/{{ fileLocation }}" title="See the history of this page">{{ initialCreationDate }} &ndash; {{ lastEditDate }}</a></p>
+        <p class="metadata-summary">{{ summary }}</p>
+        <p class="metadata-status">{{ initialCreationDate }} &ndash; {{ lastEditDate }} (<a href="https://github.com/mikrostew/automaticowl.net/commits/master/{{ fileLocation }}" title="See the history of this page on GitHub">history</a>)<span class="status-separator">•</span>{{ status }}</p>
       </section>
       <section class="main">
 {{ content | safe }}
