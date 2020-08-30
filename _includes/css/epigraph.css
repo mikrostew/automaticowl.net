@@ -1,8 +1,10 @@
 /* epigraphs */
-div.epigraph > blockquote > p {
+
+.epigraph > blockquote > p {
   font-style: italic;
 }
-div.epigraph > blockquote > p:last-child {
+
+.epigraph > blockquote > p:last-child {
   font-style: normal;
   margin-left: 4rem;
 }
