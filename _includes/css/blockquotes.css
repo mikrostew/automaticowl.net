@@ -1,0 +1,32 @@
+blockquote {
+  /* so that position:absolute for ::before works */
+  position: relative;
+  margin: 0;
+  padding: 15px 40px;
+  font-size: 0.9em;
+}
+
+/* styled quotes in the margin of blockquotes */
+blockquote::before {
+  color: #999;
+  content: "\201C";
+  font-size: 32px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+/* no quotes for epigraphs */
+.epigraph > blockquote::before {
+  content: "";
+}
+
+/* warning icon */
+.warning > blockquote::before {
+  position: absolute;
+  left: 10px;
+  top: 6px;
+  content: "!";
+  font-size: 64px;
+}
+

@@ -29,7 +29,11 @@ Something I haven't thought much about. I've mostly defaulted to using the "MIT 
 
 But before getting into it, a disclaimer:
 
+<div class="warning">
+
 > I am a Software Engineer, not a Lawyer[^not-a-lawyer]. The information on this page is provided "as-is", for general purposes only, and does not, and is not intended to, constitute legal advice. Readers should contact their attorney to obtain advice with respect to any particular legal matter.
+
+</div>
 
 [^not-a-lawyer]: [Is “I am not a lawyer” disclaimer generally necessary?](https://law.stackexchange.com/a/699):
 
