@@ -22,7 +22,15 @@ owlLogoSize: 32px
   </head>
   <body>
     <header>
-      <a href="/" class="header-link">automatic owl</a>
+      <div>
+        <a href="/" class="header-link">automatic owl</a>
+      </div>
+      <div class="theme-switcher">
+        <input type="radio" id="light" name="theme" value="light" checked>
+        <label for="light">Light</label>
+        <input type="radio" id="dark" name="theme" value="dark">
+        <label for="dark">Dark</label>
+      </div>
     </header>
     <article>
       <h1>{{ title }}</h1>
