@@ -5,16 +5,60 @@ header {
 }
 
 .header-link {
-  /* apparently this shouldn't be used, oops */
-  /* https://developer.mozilla.org/en-US/docs/Web/CSS/font-feature-settings */
-  /* font-feature-settings: 'smcp'; */
-
   font-variant: small-caps;
   text-decoration: none;
-  color: black;
   margin: 10px;
 }
 
-.theme-switcher {
-  font-size: 16px;
+/* adapted from https://markheath.net/post/customize-radio-button-css */
+
+/* hide the circular radio buttons */
+input.theme {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+
+/* default, unselected labels */
+.theme label {
+  display: inline-block;
+  font-size: 14px;
+  /* TODO: define this color in vars */
+  color: #999;
+}
+
+/* style when selected */
+#light:checked ~ article #light-label {
+  text-decoration: underline;
+}
+#dark:checked ~ article #dark-label {
+  text-decoration: underline;
+}
+
+/* style when focused */
+#light:focus ~ article #light-label {
+  border: 1px dotted #999;
+}
+#dark:focus ~ article #dark-label {
+  border: 1px dotted #999;
+}
+
+/* style when hovered */
+.theme label:hover {
+  color: var(--text-color);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* adapted from https://medium.com/js-dojo/how-to-enable-dark-mode-on-your-website-with-pure-css-32640335474 */
+/* problem with that ^^ way is that it can only change colors for things under them in the dom... */
+
+/* use the general sibling combinator to change the whole article */
+#light:checked ~ article {
+  --bg-color: white;
+  --text-color: black;
+}
+#dark:checked ~ article {
+  --bg-color: black;
+  --text-color: white;
 }

@@ -21,30 +21,30 @@ owlLogoSize: 32px
     <link rel="stylesheet" type="text/css" href="/theme.css" />
   </head>
   <body>
-    <header>
-      <div>
-        <a href="/" class="header-link">automatic owl</a>
-      </div>
-      <div class="theme-switcher">
-        <input type="radio" id="light" name="theme" value="light" checked>
-        <label for="light">Light</label>
-        <input type="radio" id="dark" name="theme" value="dark">
-        <label for="dark">Dark</label>
-      </div>
-    </header>
-    <article>
-      <h1>{{ title }}</h1>
+    <input class="theme" type="radio" id="light" name="theme" value="light" checked>
+    <input class="theme" type="radio" id="dark" name="theme" value="dark">
+    <article class="main">
+      <header>
+        <div>
+          <a href="/" class="header-link">automatic owl</a>
+        </div>
+        <div class="theme">
+          <label for="light" id="light-label" title="Light mode">Light</label>
+          <label for="dark" id="dark-label" title="Dark mode">Dark</label>
+        </div>
+      </header>
       <section class="metadata">
+        <h1>{{ title }}</h1>
         <p class="metadata-summary">{{ summary }}</p>
         <p class="metadata-status">{{ initialCreationDate }} &ndash; {{ lastEditDate }} (<a href="https://github.com/mikrostew/automaticowl.net/commits/master/{{ fileLocation }}" title="See the history of this page on GitHub">history</a>)<span class="status-separator">•</span>{{ status }}</p>
       </section>
-      <section class="main">
+      <section class="content">
 {{ content | safe }}
       </section>
-    </article>
-    <footer>
-    <!-- TODO: flex layout here -->
+      <footer>
+      <!-- TODO: flex layout here -->
 {% include "svg/automatic-owl-logo.svg" %}
-    </footer>
+      </footer>
+    </article>
   </body>
 </html>
