@@ -1,0 +1,17 @@
+:root {
+  /* TODO: set something with less contrast */
+  --light-mode-bg: white;
+  --light-mode-text: black;
+  --dark-mode-bg: black;
+  --dark-mode-text: white;
+
+  /* set light mode color as default value */
+  --bg-color: var(--light-mode-bg);
+  --text-color: var(--light-mode-text);
+}
+
+/* auto-switch to dark mode based on system setting */
+@media (prefers-color-scheme: dark) {
+  --bg-color: var(--dark-mode-bg);
+  --text-color: var(--dark-mode-text);
+}
