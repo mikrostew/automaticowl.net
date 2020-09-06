@@ -185,3 +185,21 @@ Crayon licenses
 
 - https://opensource.stackexchange.com/questions/1445/how-can-a-crayon-license-be-a-problem
 - http://lists.opensource.org/pipermail/license-discuss_lists.opensource.org/2011-December/017416.html
+
+AT&T vs BSD Unix
+* https://en.wikipedia.org/wiki/UNIX_System_Laboratories,_Inc._v._Berkeley_Software_Design,_Inc.
+* https://en.wikipedia.org/wiki/Berkeley_Software_Distribution
+* https://www.quora.com/How-are-BSD-Unix-and-Linux-different
+* http://www.softpanorama.org/People/Torvalds/Finland_period/att_lawsuit_as_a_launcher_for_linux.shtml
+* https://github.com/sirredbeard/Awesome-UNIX/issues/16
+
+SCO vs Linux
+* https://en.wikipedia.org/wiki/SCO%E2%80%93Linux_disputes
+* https://en.wikipedia.org/wiki/Timeline_of_SCO%E2%80%93Linux_disputes
+* https://en.wikipedia.org/wiki/SCO_Group,_Inc._v._International_Business_Machines_Corp.
+* https://arstechnica.com/tech-policy/2017/10/appeals-court-keeps-alive-the-never-ending-linux-case-sco-v-ibm/
+* https://www.theregister.com/2017/11/02/ibm_vs_sco_revives/
+* https://www.zdnet.com/article/scos-legal-war-against-ibm-and-linux-comes-to-an-end/
+* https://www.itprotoday.com/linux/more-about-sco-vs-linux
+* https://yro.slashdot.org/story/18/01/29/0213203/the-sco-vs-ibm-zombie-shambles-on
+* https://www.computerworld.com/article/2467540/what-happens-next-in-sco-vs--novell.html
