@@ -24,7 +24,7 @@ input.theme {
   display: inline-block;
   font-size: 14px;
   /* TODO: define this color in vars */
-  color: #999;
+  color: var(--text-color-alt);
 }
 
 /* style when selected */
@@ -37,10 +37,10 @@ input.theme {
 
 /* style when focused */
 #light:focus ~ article #light-label {
-  border: 1px dotted #999;
+  border: 1px dotted var(--text-color-alt);
 }
 #dark:focus ~ article #dark-label {
-  border: 1px dotted #999;
+  border: 1px dotted var(--text-color-alt);
 }
 
 /* style when hovered */
@@ -55,10 +55,12 @@ input.theme {
 
 /* use the general sibling combinator to change the whole article */
 #light:checked ~ article {
-  --bg-color: white;
-  --text-color: black;
+  --bg-color: var(--light-mode-bg);
+  --text-color: var(--light-mode-text);
+  --text-color-alt: var(--light-mode-text-alt);
 }
 #dark:checked ~ article {
-  --bg-color: black;
-  --text-color: white;
+  --bg-color: var(--dark-mode-bg);
+  --text-color: var(--dark-mode-text);
+  --text-color-alt: var(--dark-mode-text-alt);
 }

@@ -1,17 +1,26 @@
 :root {
-  /* TODO: set something with less contrast */
-  --light-mode-bg: white;
-  --light-mode-text: black;
-  --dark-mode-bg: black;
-  --dark-mode-text: white;
+  --light-mode-bg: #f9f9f9;
+  --light-mode-text: #222;
+  --light-mode-text-alt: #777;
+  --dark-mode-bg: #222;
+  --dark-mode-text: #ddd;
+  --dark-mode-text-alt: #bbb;
 
   /* set light mode color as default value */
   --bg-color: var(--light-mode-bg);
   --text-color: var(--light-mode-text);
+  --text-color-alt: var(--light-mode-text-alt);
+  --light-text-dec: dotted underline;
+  --dark-text-dec: none;
 }
 
 /* auto-switch to dark mode based on system setting */
 @media (prefers-color-scheme: dark) {
-  --bg-color: var(--dark-mode-bg);
-  --text-color: var(--dark-mode-text);
+  body {
+    --bg-color: var(--dark-mode-bg);
+    --text-color: var(--dark-mode-text);
+    --text-color-alt: var(--dark-mode-text-alt);
+    --light-text-dec: none;
+    --dark-text-dec: dotted underline;
+  }
 }

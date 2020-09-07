@@ -8,7 +8,7 @@ blockquote {
 
 /* styled quotes in the margin of blockquotes */
 blockquote::before {
-  color: #999;
+  color: var(--text-color-alt);
   content: "\201C";
   font-size: 32px;
   position: absolute;
