@@ -23,6 +23,8 @@ article.main {
   /* don't set a margin here (it would not get the bg-color) */
   color: var(--text-color);
   background-color: var(--bg-color);
+  transition-property: color, background-color;
+  transition-duration: 500ms;
 }
 
 article.main > * {
