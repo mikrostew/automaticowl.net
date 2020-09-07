@@ -23,11 +23,21 @@ input.theme {
 .theme label {
   display: inline-block;
   font-size: 14px;
-  /* TODO: define this color in vars */
   color: var(--text-color-alt);
 }
 
+/* style the other labels when Auto is selected */
+#auto:checked ~ article #light-label {
+  text-decoration: var(--light-text-dec);
+}
+#auto:checked ~ article #dark-label {
+  text-decoration: var(--dark-text-dec);
+}
+
 /* style when selected */
+#auto:checked ~ article #auto-label {
+  text-decoration: underline;
+}
 #light:checked ~ article #light-label {
   text-decoration: underline;
 }
@@ -36,6 +46,9 @@ input.theme {
 }
 
 /* style when focused */
+#auto:focus ~ article #auto-label {
+  border: 1px dotted var(--text-color-alt);
+}
 #light:focus ~ article #light-label {
   border: 1px dotted var(--text-color-alt);
 }
@@ -45,6 +58,22 @@ input.theme {
 
 /* style when hovered */
 .theme label:hover {
+  color: var(--text-color);
+  text-decoration: underline;
+  cursor: pointer;
+}
+/* (need these to override the style when Auto is selected) */
+#auto:checked ~ article #auto-label:hover {
+  color: var(--text-color);
+  text-decoration: underline;
+  cursor: pointer;
+}
+#auto:checked ~ article #dark-label:hover {
+  color: var(--text-color);
+  text-decoration: underline;
+  cursor: pointer;
+}
+#auto:checked ~ article #light-label:hover {
   color: var(--text-color);
   text-decoration: underline;
   cursor: pointer;
