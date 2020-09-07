@@ -60,6 +60,7 @@ input.theme {
 #light:checked ~ article #light-label,
 #dark:checked ~ article #dark-label {
   border-bottom: 1px solid currentColor;
+  cursor: default;
 }
 
 /* style when focused */
@@ -76,7 +77,6 @@ input.theme {
   cursor: pointer;
 }
 /* (need these to override the style when Auto is selected) */
-#auto:checked ~ article #auto-label:hover,
 #auto:checked ~ article #dark-label:hover,
 #auto:checked ~ article #light-label:hover {
   color: var(--text-color);
