@@ -32,6 +32,7 @@ input.theme {
   display: inline-block;
   font-size: 14px;
   color: var(--text-color-alt);
+  margin: 0 0.5em;
 }
 
 /* style the other labels when Auto is selected */
@@ -43,23 +44,15 @@ input.theme {
 }
 
 /* style when selected */
-#auto:checked ~ article #auto-label {
-  text-decoration: underline;
-}
-#light:checked ~ article #light-label {
-  text-decoration: underline;
-}
+#auto:checked ~ article #auto-label,
+#light:checked ~ article #light-label,
 #dark:checked ~ article #dark-label {
   text-decoration: underline;
 }
 
 /* style when focused */
-#auto:focus ~ article #auto-label {
-  border: 1px dotted var(--text-color-alt);
-}
-#light:focus ~ article #light-label {
-  border: 1px dotted var(--text-color-alt);
-}
+#auto:focus ~ article #auto-label,
+#light:focus ~ article #light-label,
 #dark:focus ~ article #dark-label {
   border: 1px dotted var(--text-color-alt);
 }
@@ -71,16 +64,8 @@ input.theme {
   cursor: pointer;
 }
 /* (need these to override the style when Auto is selected) */
-#auto:checked ~ article #auto-label:hover {
-  color: var(--text-color);
-  text-decoration: underline;
-  cursor: pointer;
-}
-#auto:checked ~ article #dark-label:hover {
-  color: var(--text-color);
-  text-decoration: underline;
-  cursor: pointer;
-}
+#auto:checked ~ article #auto-label:hover,
+#auto:checked ~ article #dark-label:hover,
 #auto:checked ~ article #light-label:hover {
   color: var(--text-color);
   text-decoration: underline;
