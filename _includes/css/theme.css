@@ -1,0 +1,103 @@
+:root {
+  /* set light mode color as default value */
+  --bg-color: var(--light-mode-bg);
+  --text-color: var(--light-mode-text);
+  --text-color-alt: var(--light-mode-text-alt);
+  --light-text-dec: dotted underline;
+  --dark-text-dec: none;
+}
+
+/* auto-switch to dark mode based on system setting */
+@media (prefers-color-scheme: dark) {
+  body {
+    --bg-color: var(--dark-mode-bg);
+    --text-color: var(--dark-mode-text);
+    --text-color-alt: var(--dark-mode-text-alt);
+    --light-text-dec: none;
+    --dark-text-dec: dotted underline;
+  }
+}
+
+/* adapted from https://markheath.net/post/customize-radio-button-css */
+
+/* hide the circular radio buttons */
+input.theme {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+
+/* default, unselected labels */
+.theme label {
+  display: inline-block;
+  font-size: 14px;
+  color: var(--text-color-alt);
+}
+
+/* style the other labels when Auto is selected */
+#auto:checked ~ article #light-label {
+  text-decoration: var(--light-text-dec);
+}
+#auto:checked ~ article #dark-label {
+  text-decoration: var(--dark-text-dec);
+}
+
+/* style when selected */
+#auto:checked ~ article #auto-label {
+  text-decoration: underline;
+}
+#light:checked ~ article #light-label {
+  text-decoration: underline;
+}
+#dark:checked ~ article #dark-label {
+  text-decoration: underline;
+}
+
+/* style when focused */
+#auto:focus ~ article #auto-label {
+  border: 1px dotted var(--text-color-alt);
+}
+#light:focus ~ article #light-label {
+  border: 1px dotted var(--text-color-alt);
+}
+#dark:focus ~ article #dark-label {
+  border: 1px dotted var(--text-color-alt);
+}
+
+/* style when hovered */
+.theme label:hover {
+  color: var(--text-color);
+  text-decoration: underline;
+  cursor: pointer;
+}
+/* (need these to override the style when Auto is selected) */
+#auto:checked ~ article #auto-label:hover {
+  color: var(--text-color);
+  text-decoration: underline;
+  cursor: pointer;
+}
+#auto:checked ~ article #dark-label:hover {
+  color: var(--text-color);
+  text-decoration: underline;
+  cursor: pointer;
+}
+#auto:checked ~ article #light-label:hover {
+  color: var(--text-color);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* adapted from https://medium.com/js-dojo/how-to-enable-dark-mode-on-your-website-with-pure-css-32640335474 */
+/* problem with that ^^ way is that it can only change colors for things under them in the dom... */
+
+/* use the general sibling combinator to change the whole article */
+#light:checked ~ article {
+  --bg-color: var(--light-mode-bg);
+  --text-color: var(--light-mode-text);
+  --text-color-alt: var(--light-mode-text-alt);
+}
+#dark:checked ~ article {
+  --bg-color: var(--dark-mode-bg);
+  --text-color: var(--dark-mode-text);
+  --text-color-alt: var(--dark-mode-text-alt);
+}
