@@ -1,11 +1,11 @@
 ---
-layout: layouts/post.njk
+layout: post
 title: Choosing an open source license
 summary: A concise guide, followed by an in-depth discussion of further considerations.
 status: In Progress
-fileLocation: software-licensing.md
+fileLocation: src/software-licensing.md
 initialCreationDate: Jul 29, 2020
-lastEditDate: Aug 29, 2020
+lastEditDate: Sep 7, 2020
 
 ---
 

@@ -1,6 +1,5 @@
+// see https://www.11ty.dev/docs/config/
 module.exports = function (eleventyConfig) {
-  // output directory: _site
-
   // copy `img/` to `_site/img`
   eleventyConfig.addPassthroughCopy('img');
 
@@ -43,4 +42,21 @@ module.exports = function (eleventyConfig) {
   };
 
   eleventyConfig.setLibrary('md', markdownLib);
+
+  // other config that doesn't use the API
+  return {
+    dir: {
+      // this builds src/ --> _site/
+      input: 'src',
+      output: '_site',
+      // these 3 are relative to dir.input
+      includes: '_includes',
+      layouts: '_layouts',
+      data: '_data',
+      // set default template engines
+      dataTemplateEngine: 'njk',
+      markdownTemplateEngine: 'njk',
+      htmlTemplateEngine: 'njk',
+    },
+  };
 };
