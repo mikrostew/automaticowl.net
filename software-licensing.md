@@ -203,3 +203,12 @@ SCO vs Linux
 * https://www.itprotoday.com/linux/more-about-sco-vs-linux
 * https://yro.slashdot.org/story/18/01/29/0213203/the-sco-vs-ibm-zombie-shambles-on
 * https://www.computerworld.com/article/2467540/what-happens-next-in-sco-vs--novell.html
+
+Books
+
+* https://www.oreilly.com/openbook/
+* http://www.catb.org/~esr/writings/cathedral-bazaar/
+* https://www.oreilly.com/openbook/freedom/
+* https://www.oreilly.com/openbook/opensources/book/
+* https://producingoss.com/
+* https://www.oreilly.com/openbook/osfreesoft/book/
