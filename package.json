@@ -10,6 +10,10 @@
     "node": "12.18.3",
     "yarn": "1.22.4"
   },
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve"
+  },
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
     "@arkweid/lefthook": "^0.7.2",
