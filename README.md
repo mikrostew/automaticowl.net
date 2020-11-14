@@ -104,3 +104,20 @@ I use [lefthook](https://github.com/Arkweid/lefthook) to run [git hooks](https:/
 I previously used [husky](https://github.com/typicode/husky) and [listr](https://github.com/SamVerschueren/listr) for these checks, but I found that lefthook is faster, and easier to configure.
 
 I also tried using prettier for MarkDown files, but it screws up some non-standard things, like footnotes with multiple sections.
+
+
+## TODOs
+
+Check out https://www.industrialempathy.com/posts/eleventy-high-performance-blog/, and glean some ideas from that
+
+Add an inclusive language checker, from https://www.11ty.dev/docs/config/#linters-example-use-inclusive-language
+
+Save the user's auto/light/dark preference with a cookie
+
+setup KB section of the site
+
+Post about the pure CSS light/dark theme work (in KB)
+
+Add shit to the footer
+
+Auto-add stuff to the yaml front matter, like creation time and last modified time, and file path, in a hook
