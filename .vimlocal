@@ -1,0 +1,9 @@
+" use a custom command to modify markdown files
+let g:ale_fixers = {
+  \ 'javascript': ['eslint'],
+  \ 'markdown': ['TestFunction']}
+
+function! TestFunction(buffer)
+    " %t will be the file containing the lines of the buffer
+    return { 'command': 'yarn --silent run update-yaml %t' }
+endfunction
