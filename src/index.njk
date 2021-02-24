@@ -3,6 +3,9 @@ layout: base-page
 
 title: Home
 
+# opt out of collections
+eleventyExcludeFromCollections: true
+
 ---
 
 <section class="metadata">
@@ -23,5 +26,11 @@ Things I have recently changed/edited/added (because I tend to work incrementall
 
 <h2>Everything</h2>
 All posts, notes, etc.
+
+<ul>
+{%- for post in collections.all -%}
+  <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+{%- endfor -%}
+</ul>
 
 </section>
