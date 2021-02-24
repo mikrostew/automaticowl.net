@@ -1,0 +1,38 @@
+---
+#### Things that should be overridden by the page
+title: Automatic Owl
+
+#### Things that should not be overridden
+# for automatic-owl-logo.svg
+owlLogoSize: 32px
+
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} - automaticowl.net</title>
+    <link rel="stylesheet" type="text/css" href="/automaticowl.css" />
+  </head>
+  <body>
+    <input class="theme" type="radio" id="auto" name="theme" value="auto" checked>
+    <input class="theme" type="radio" id="light" name="theme" value="light">
+    <input class="theme" type="radio" id="dark" name="theme" value="dark">
+    <article class="main">
+      <header>
+        <div>
+          <a href="/" class="header-link">automatic owl</a>
+        </div>
+        <div class="theme">
+          <label for="auto" id="auto-label" title="Auto-select light or dark theme based on system setting">Auto</label><label for="light" id="light-label" title="Light theme">Light</label><label for="dark" id="dark-label" title="Dark theme">Dark</label>
+        </div>
+      </header>
+{{ content | safe }}
+      <footer>
+      <!-- TODO: flex layout here -->
+{% include "svg/automatic-owl-logo.svg" %}
+      </footer>
+    </article>
+  </body>
+</html>

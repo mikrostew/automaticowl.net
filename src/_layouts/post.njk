@@ -1,4 +1,6 @@
 ---
+layout: base-page
+
 #### Things that should be overridden by the page
 title: Automatic Owl
 summary: Post template
@@ -7,44 +9,12 @@ fileLocation: _includes/layouts/post.njk
 initialCreationDate: Jan 1, 2020
 lastEditDate: Jan 2, 2020
 
-#### Things that should not be overridden
-# for automatic-owl-logo.svg
-owlLogoSize: 32px
-
 ---
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }} - automaticowl.net</title>
-    <link rel="stylesheet" type="text/css" href="/automaticowl.css" />
-  </head>
-  <body>
-    <input class="theme" type="radio" id="auto" name="theme" value="auto" checked>
-    <input class="theme" type="radio" id="light" name="theme" value="light">
-    <input class="theme" type="radio" id="dark" name="theme" value="dark">
-    <article class="main">
-      <header>
-        <div>
-          <a href="/" class="header-link">automatic owl</a>
-        </div>
-        <div class="theme">
-          <label for="auto" id="auto-label" title="Auto-select light or dark theme based on system setting">Auto</label><label for="light" id="light-label" title="Light theme">Light</label><label for="dark" id="dark-label" title="Dark theme">Dark</label>
-        </div>
-      </header>
-      <section class="metadata">
-        <h1>{{ title }}</h1>
-        <p class="metadata-summary">{{ summary }}</p>
-        <p class="metadata-status">{{ initialCreationDate }} &ndash; {{ lastEditDate }} (<a href="https://github.com/mikrostew/automaticowl.net/commits/master/{{ fileLocation }}" title="See the history of this page on GitHub">history</a>)<span class="status-separator">•</span>{{ status }}</p>
-      </section>
-      <section class="content">
+<section class="metadata">
+  <h1>{{ title }}</h1>
+  <p class="metadata-summary">{{ summary }}</p>
+  <p class="metadata-status">{{ initialCreationDate }} &ndash; {{ lastEditDate }} (<a href="https://github.com/mikrostew/automaticowl.net/commits/master/{{ fileLocation }}" title="See the history of this page on GitHub">history</a>)<span class="status-separator">•</span>{{ status }}</p>
+</section>
+<section class="content">
 {{ content | safe }}
-      </section>
-      <footer>
-      <!-- TODO: flex layout here -->
-{% include "svg/automatic-owl-logo.svg" %}
-      </footer>
-    </article>
-  </body>
-</html>
+</section>
