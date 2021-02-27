@@ -13,22 +13,38 @@ eleventyExcludeFromCollections: true
 
 <section class="content">
 
-Hey there! You've stumbled across my website. There's not much here at the moment, because I'm redoing everything.
+<p>Hey, thanks for stopping by! There's not much here at the moment, because I'm redoing everything.</p>
 
-<h2>Latest Posts</h2>
-Newly completed posts, in reverse chronological order.
+<h3>Last 10 Posts</h3>
+<p>TBD</p>
 
-<h2>Recommended</h2>
-Popular posts you might like (in no particular order).
+{# TODO: add this when I have more posts #}
+{# <h3>Favorite</h3> #}
+{# <i>Start here if you're new</i> #}
+{# <p>TBD</p> #}
 
-<h2>Recent Updates</h2>
-Things I have recently changed/edited/added (because I tend to work incrementally).
+<h3>Recent Updates</h3>
+<p><i>Because I tend to work incrementally, writing and editing over time</i></p>
 
-<h2>Everything</h2>
-All posts, notes, etc.
-
+{# select only things that are in-progress (TODO: is that right?) #}
+{# TODO: limit this (to ten?) #}
 <ul>
-{%- for post in collections.all -%}
+{%- for post in collections.all | selectattr("data", "inProgress") | sort(true, true, 'data.lastEditDate') -%}
+  <li>{{ post.data.lastEditDate }} - <a href="{{ post.url }}">{{ post.data.title }}</a></li>
+{%- endfor -%}
+</ul>
+
+<h3>Everything</h3>
+{# maybe once I have lots of posts this could be split into categories? #}
+{# and can use https://mozilla.github.io/nunjucks/templating.html#groupby ? #}
+{# TODO: I should also use tags for categories - posts, notes, projects, etc. #}
+
+<p>TBD</p>
+
+{# select only things that are completed #}
+{# TODO: sort by date, descending #}
+<ul>
+{%- for post in collections.all | rejectattr("data", "inProgress") -%}
   <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
 {%- endfor -%}
 </ul>
