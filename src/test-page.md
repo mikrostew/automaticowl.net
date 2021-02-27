@@ -1,7 +1,8 @@
 ---
 title: Page to check CSS theme
 category: notes
-subtitle: "A page containing all the formatting I use, to check that I haven't messed things up when changing CSS."
+subtitle: "A page containing all the formatting I use, to check that I haven't
+  messed things up when changing CSS."
 layout: post
 
 # TODO: change this to last-edit? do I even need it at all? it is kinda nice to have...
@@ -14,12 +15,19 @@ original-publish:
 
 # where this was syndicated to, for discussion/comments/etc.
 comments:
-- data:
-    text: Reddit
-    url: https://www.reddit.com/
-- data:
-    text: Hacker News
-    url: https://news.ycombinator.com/
+  - data:
+      text: Reddit
+      url: https://www.reddit.com/
+  - data:
+      text: Hacker News
+      url: https://news.ycombinator.com/
+
+# opt out of collections
+eleventyExcludeFromCollections: true
+
+lastEditDate: Feb 27, 2021
+fileLocation: src/test-page.md
+
 ---
 
 @@BLOCK-INFO
