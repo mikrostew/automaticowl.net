@@ -13,7 +13,7 @@ lastEditDate: Jan 2, 2020
 <section class="metadata">
   <h1>{{ title }}</h1>
   <p class="metadata-summary">{{ summary }}</p>
-  <p class="metadata-status">{{ initialCreationDate }} &ndash; {{ lastEditDate }} (<a href="https://github.com/mikrostew/automaticowl.net/commits/master/{{ fileLocation }}" title="See the history of this page on GitHub">history</a>)<span class="status-separator">•</span>{{ status }}</p>
+  <p class="metadata-status">{{ initialCreationDate }} &ndash; {{ lastEditDate }} (<a href="https://github.com/mikrostew/automaticowl.net/commits/master/{{ fileLocation }}" title="See the history of this page on GitHub">history</a>){% if inProgress %}<span class="status-separator">•</span>Work In Progress{% endif %}</p>
 </section>
 <section class="content">
 {{ content | safe }}
