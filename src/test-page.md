@@ -1,12 +1,13 @@
 ---
-title: Page to check CSS theme
-category: notes
-subtitle: "A page containing all the formatting I use, to check that I haven't
-  messed things up when changing CSS."
 layout: post
-
-# TODO: change this to last-edit? do I even need it at all? it is kinda nice to have...
-last_edit: 2019-07-18
+title: Test Page
+summary: A page containing all the formatting I use, to check that I haven't
+  messed things up when changing CSS.
+category: test
+inProgress: true
+fileLocation: src/test-page.md
+initialCreationDate: Feb 27, 2021
+lastEditDate: Feb 28, 2021
 
 # where this was published first
 original-publish:
@@ -24,9 +25,6 @@ comments:
 
 # opt out of collections
 eleventyExcludeFromCollections: true
-
-lastEditDate: Feb 27, 2021
-fileLocation: src/test-page.md
 
 ---
 
