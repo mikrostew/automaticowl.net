@@ -28,6 +28,37 @@ eleventyExcludeFromCollections: true
 
 ---
 
+## Blockquotes
+
+> First blockquote, containing a couple of paragraphs.
+>
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel efficitur dolor. Integer volutpat magna vitae arcu vehicula, vel convallis arcu vehicula. Vivamus cursus ligula at elit feugiat, et suscipit magna venenatis. Aliquam ut lectus dignissim, accumsan ipsum at, volutpat mi. Pellentesque a elit ut enim tristique egestas. Curabitur ipsum orci, maximus nec finibus vulputate, accumsan id mi. Nullam consectetur ex nunc, at dignissim ante mattis a. Suspendisse potenti.
+
+> Single line blockquote, consecutive to the first.
+
+Nested blockquotes
+
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel efficitur dolor. Integer volutpat magna vitae arcu vehicula, vel convallis arcu vehicula. Vivamus cursus ligula at elit feugiat, et suscipit magna venenatis. Aliquam ut lectus dignissim, accumsan ipsum at, volutpat mi. Pellentesque a elit ut enim tristique egestas. Curabitur ipsum orci, maximus nec finibus vulputate, accumsan id mi. Nullam consectetur ex nunc, at dignissim ante mattis a. Suspendisse potenti.
+>
+> > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel efficitur dolor. Integer volutpat magna vitae arcu vehicula, vel convallis arcu vehicula. Vivamus cursus ligula at elit feugiat, et suscipit magna venenatis. Aliquam ut lectus dignissim, accumsan ipsum at, volutpat mi. Pellentesque a elit ut enim tristique egestas. Curabitur ipsum orci, maximus nec finibus vulputate, accumsan id mi. Nullam consectetur ex nunc, at dignissim ante mattis a. Suspendisse potenti.
+
+
+## Epigraphs
+
+
+<div class="epigraph">
+
+> A little learning is a dangerous thing;<br>
+> Drink deep, or taste not the Pierian spring.<br>
+> There shallow draughts intoxicate the brain,<br>
+> And drinking largely sobers us again.<br>
+>
+> Alexander Pope, "[A Little Learning](https://www.poetsgraves.co.uk/Classic%20Poems/Pope/a_little_learning.htm)"
+
+</div>
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel efficitur dolor. Integer volutpat magna vitae arcu vehicula, vel convallis arcu vehicula. Vivamus cursus ligula at elit feugiat, et suscipit magna venenatis. Aliquam ut lectus dignissim, accumsan ipsum at, volutpat mi. Pellentesque a elit ut enim tristique egestas.
+
 ## Info Blocks
 
 <div class="info tip">
@@ -113,10 +144,6 @@ Footnotes[^examplecom] should show up correctly[^footnotescom].
 This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
 
 ## Header 2 ([link](/))
-
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
 
 
 
