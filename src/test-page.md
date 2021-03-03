@@ -7,7 +7,7 @@ category: test
 inProgress: true
 fileLocation: src/test-page.md
 initialCreationDate: Feb 27, 2021
-lastEditDate: Feb 28, 2021
+lastEditDate: Mar 3, 2021
 
 # where this was published first
 original-publish:
@@ -28,10 +28,66 @@ eleventyExcludeFromCollections: true
 
 ---
 
-@@BLOCK-INFO
-> The built-in themes on Github Pages use a standard file to demonstrate their styles. For example, [modernist theme](https://pages-themes.github.io/modernist/).
->
-> I took that file, made some changes, and find it to be a good reference when changing CSS or adding features (to make sure I haven't screwed anything up).
+## Info Blocks
+
+<div class="info tip">
+
+**Tip with a title.**
+
+Long lines should look right if they go all the way over to the right side of this box and run up against the edge.
+
+</div>
+
+<div class="info tip">
+
+Tip with no title.
+
+</div>
+
+<div class="info note">
+
+**Note with a title.**
+
+Notes from some video on youtube.
+
+</div>
+
+<div class="info note">
+
+Note with no title.
+
+</div>
+
+<div class="info warn">
+
+**Warning with a title.**
+
+Multiple paragraphs should be fine.
+
+</div>
+
+<div class="info warn">
+
+Warning with no title.
+
+</div>
+
+<div class="info error">
+
+**Error with a title.**
+
+Error! Error! Abandon ship! Kidding, it's fine
+
+</div>
+
+<div class="info error">
+
+Error with no title.
+
+</div>
+
+
+# TODO below this
 
 After that is a HR:
 
@@ -62,35 +118,6 @@ This is a normal paragraph following a header. GitHub is a code hosting platform
 >
 > When something is important enough, you do it even if the odds are not in your favor.
 
-Indicating that something is OK:
-
-@@BLOCK-APPROVE
-> Not sure that I would use this much...
-
-Or giving some info:
-
-@@BLOCK-INFO
-> **You should note this.**<br>
-> Long lines should look right if they go all the way over to the right side of this box and run up against the edge.
-
-Or providing a warning:
-
-@@BLOCK-WARN
-> Don't tell me you weren't warned...
->
-> This should handle multiple paragraphs too
-
-Or showing an error:
-
-@@BLOCK-ERROR
-> **Error! Error! Abandon ship!**
->
-> Kidding, it's fine
-
-Or indicating where I took notes from:
-
-@@BLOCK-NOTE
-> Notes taken from [some video](https://www.youtube.com) on YouTube
 
 
 ### Header 3 ([link](/))
