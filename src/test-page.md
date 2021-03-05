@@ -7,7 +7,7 @@ category: test
 inProgress: true
 fileLocation: src/test-page.md
 initialCreationDate: Feb 27, 2021
-lastEditDate: Mar 3, 2021
+lastEditDate: Mar 4, 2021
 
 # where this was published first
 original-publish:
@@ -28,23 +28,56 @@ eleventyExcludeFromCollections: true
 
 ---
 
+## Section Heading
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel efficitur dolor. Integer volutpat magna vitae arcu vehicula, vel convallis arcu vehicula. Vivamus cursus ligula at elit feugiat, et suscipit magna venenatis.
+
+### Subsection One
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel efficitur dolor. Integer volutpat magna vitae arcu vehicula, vel convallis arcu vehicula. Vivamus cursus ligula at elit feugiat, et suscipit magna venenatis. Aliquam ut lectus dignissim, accumsan ipsum at, volutpat mi.
+
+### Subsection Two
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel efficitur dolor. Integer volutpat magna vitae arcu vehicula, vel convallis arcu vehicula.
+
+
+## Emphasis
+
+Lorem ipsum **dolor sit** amet, consectetur adipiscing elit.
+
+Lorem ipsum dolor sit amet, _consectetur_ adipiscing elit.
+
+Lorem ipsum dolor ~~sit amet~~, consectetur adipiscing elit.
+
+
 ## Blockquotes
 
-> First blockquote, containing a couple of paragraphs.
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel efficitur dolor. Integer volutpat magna vitae arcu vehicula, vel convallis arcu vehicula.
+
+Multiple paragraphs
+
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel efficitur dolor.
 >
-> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel efficitur dolor. Integer volutpat magna vitae arcu vehicula, vel convallis arcu vehicula. Vivamus cursus ligula at elit feugiat, et suscipit magna venenatis. Aliquam ut lectus dignissim, accumsan ipsum at, volutpat mi. Pellentesque a elit ut enim tristique egestas. Curabitur ipsum orci, maximus nec finibus vulputate, accumsan id mi. Nullam consectetur ex nunc, at dignissim ante mattis a. Suspendisse potenti.
+> Integer volutpat magna vitae arcu vehicula, vel convallis arcu vehicula. Vivamus cursus ligula at elit feugiat, et suscipit magna venenatis. Aliquam ut lectus dignissim, accumsan ipsum at, volutpat mi. Pellentesque a elit ut enim tristique egestas.
 
-> Single line blockquote, consecutive to the first.
 
-Nested blockquotes
+Nested
 
-> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel efficitur dolor. Integer volutpat magna vitae arcu vehicula, vel convallis arcu vehicula. Vivamus cursus ligula at elit feugiat, et suscipit magna venenatis. Aliquam ut lectus dignissim, accumsan ipsum at, volutpat mi. Pellentesque a elit ut enim tristique egestas. Curabitur ipsum orci, maximus nec finibus vulputate, accumsan id mi. Nullam consectetur ex nunc, at dignissim ante mattis a. Suspendisse potenti.
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel efficitur dolor. Integer volutpat magna vitae arcu vehicula, vel convallis arcu vehicula. Vivamus cursus ligula at elit feugiat, et suscipit magna venenatis.
 >
-> > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel efficitur dolor. Integer volutpat magna vitae arcu vehicula, vel convallis arcu vehicula. Vivamus cursus ligula at elit feugiat, et suscipit magna venenatis. Aliquam ut lectus dignissim, accumsan ipsum at, volutpat mi. Pellentesque a elit ut enim tristique egestas. Curabitur ipsum orci, maximus nec finibus vulputate, accumsan id mi. Nullam consectetur ex nunc, at dignissim ante mattis a. Suspendisse potenti.
+>> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel efficitur dolor. Integer volutpat magna vitae arcu vehicula, vel convallis arcu vehicula. Vivamus cursus ligula at elit feugiat, et suscipit magna venenatis.
+
+With other elements
+
+> ### Lorem ipsum
+>
+> - dolor sit amet
+> - consectetur adipiscing elit
+>
+> *Fusce vel* efficitur dolor. Integer **volutpat** magna vitae arcu vehicula, vel convallis arcu vehicula.
 
 
 ## Epigraphs
-
 
 <div class="epigraph">
 
@@ -57,7 +90,8 @@ Nested blockquotes
 
 </div>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel efficitur dolor. Integer volutpat magna vitae arcu vehicula, vel convallis arcu vehicula. Vivamus cursus ligula at elit feugiat, et suscipit magna venenatis. Aliquam ut lectus dignissim, accumsan ipsum at, volutpat mi. Pellentesque a elit ut enim tristique egestas.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel efficitur dolor. Integer volutpat magna vitae arcu vehicula, vel convallis arcu vehicula. Vivamus cursus ligula at elit feugiat, et suscipit magna venenatis.
+
 
 ## Info Blocks
 
@@ -122,32 +156,17 @@ Error with no title.
 
 After that is a HR:
 
-@@NOTE: this was changed to 6 asterisks so it renders correctly in vim
-
 ******
 
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 [Link to another page](/).
 
-There should be whitespace between paragraphs.
-
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
 
 ### footnotes
 
 Footnotes[^examplecom] should show up correctly[^footnotescom].
 
-# Header 1 ([link](/))
-
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
-
-## Header 2 ([link](/))
-
-
-
-### Header 3 ([link](/))
 
 Javascript with syntax highlighting (and file name):
 
