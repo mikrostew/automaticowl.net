@@ -35,7 +35,7 @@ article.main > * {
 }
 
 a {
-  color: var(--text-color);
+  color: var(--text-color-alt);
 }
 
 p {
@@ -43,8 +43,11 @@ p {
   padding: 0;
 }
 
-.metadata {
+.metadata > p {
   font-style: italic;
+}
+
+.metadata {
   text-align: center;
   margin: 40px 0;
 }
@@ -67,4 +70,8 @@ h1 {
 
 h2 {
   font-weight: normal;
+}
+
+h3 {
+  color: #CE9F79;
 }

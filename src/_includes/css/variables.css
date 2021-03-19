@@ -1,8 +1,8 @@
 :root {
   /* colors for light and dark modes */
-  --light-mode-bg: #fbfbfb;
+  --light-mode-bg: #fffdfa;
   --light-mode-text: #222;
-  --light-mode-text-alt: #777;
+  --light-mode-text-alt: #7F532E;
   --dark-mode-bg: #222;
   --dark-mode-text: #ddd;
   --dark-mode-text-alt: #bbb;

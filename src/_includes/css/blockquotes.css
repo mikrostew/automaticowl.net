@@ -21,50 +21,31 @@ blockquote::before {
   content: "";
 }
 
-/* also info blocks are kinda sorta these */
+/* info blocks are kinda sorta blockquotes */
+/* TODO: should they be their own file? */
 .info {
-  /* TODO */
   position: relative;
-  margin: 2em 0 1.5em;
-  padding: 1em 1em 1em 0;
-  border-left: 2.875em solid var(--bg-color);
+  /* top right bottom left */
+  margin: 1em 0 1em 0;
+  padding: 1em 1em 1em 3em;
+  background-color: #ffffff;
+  border: 1px solid var(--text-color-alt);
+  border-radius: 8px;
 }
 
 .info::before {
-  /* TODO */
   width: 2.875em;
   height: 100%;
   position: absolute;
   top: 0;
-  right: 100%;
+  left: 0;
   padding: .75em;
   box-sizing: border-box;
+  /* color: var(--text-color-alt); */
 }
 
 .info p:last-child {
   margin-bottom: 0;
-}
-
-/* block colors */
-.info.tip {
-  /* TODO */
-  border-left-color: #e3e3e3;
-  background-color: #e3e3e3;
-}
-.info.note {
-  /* TODO */
-  border-left-color: #e3e3e3;
-  background-color: #e3e3e3;
-}
-.info.warn {
-  /* TODO */
-  border-left-color: #ffe9ab;
-  background-color: #ffe9ab;
-}
-.info.error {
-  /* TODO */
-  border-left-color: #ff594a;
-  background-color: #ff594a;
 }
 
 /* icons for these blocks */
