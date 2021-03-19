@@ -1,7 +1,12 @@
+const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
+
 // see https://www.11ty.dev/docs/config/
 module.exports = function (eleventyConfig) {
   // copy `img/` to `_site/img`
   eleventyConfig.addPassthroughCopy('img');
+
+  // syntax highighting
+  eleventyConfig.addPlugin(syntaxHighlight);
 
   let markdownIt = require('markdown-it');
   let markdownItFootnote = require('markdown-it-footnote');
