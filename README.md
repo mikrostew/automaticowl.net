@@ -19,11 +19,11 @@ The pages are written in [markdown](https://commonmark.org/), using the [markdow
 - [markdown-it-footnote](https://github.com/markdown-it/markdown-it-footnote)
 - more TBD
 
-TODO: I'd like to make it so you can append ".md" to any page URL, and get the markdown for that page. I'm not sure how to do that yet, but it should be possible...
-
 ### Fonts
 
 Status: in progress
+
+TODO: this should be a post lol
 
 So far I've found some things that are not helpful:
 
@@ -94,6 +94,10 @@ I initially used [handlebars](https://github.com/handlebars-lang/handlebars.js) 
 
 I roll my own CSS (no libraries, thanks, although [Tufte CSS](https://edwardtufte.github.io/tufte-css/) is tempting) and use [nunjucks](https://github.com/mozilla/nunjucks) for [super simple CSS concatenation](https://www.11ty.dev/docs/quicktips/concatenate/).
 
+### Syntax Highlighting
+
+I use [eleventy-plugin-syntaxhighlight](https://www.11ty.dev/docs/plugins/syntaxhighlight/) for syntax highlighting, along with a custom CSS theme I created with help from the [prism-themes](https://github.com/PrismJS/prism-themes) repo.
+
 ### Linting & Formatting
 
 I use [lefthook](https://github.com/Arkweid/lefthook) to run [git hooks](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks) for pre-commit that run linting and formatting:
@@ -120,4 +124,3 @@ Post about the pure CSS light/dark theme work (in KB)
 
 Add shit to the footer
 
-Auto-add stuff to the yaml front matter, like creation time and last modified time, and file path, in a hook
