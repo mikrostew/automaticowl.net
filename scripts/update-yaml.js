@@ -7,6 +7,11 @@ const args = process.argv.slice(2);
 // - path to the project file, relative to CWD (which should be repo root)
 const [vimBufferFile, fileLocation] = args;
 
+// don't add front matter for the README
+if (/README.md/.test(fileLocation)) {
+  process.exit(1);
+}
+
 const vimBufferData = fs.readFileSync(vimBufferFile, 'utf8');
 
 // get current date (formatted like 'Jan 2, 2020')
@@ -16,6 +21,9 @@ const day = date.getDate();
 const year = date.getFullYear();
 const todayFormatted = `${month} ${day}, ${year}`;
 
+// update YAML front matter for:
+//  * lastEditDate
+//  * fileLocation
 // TODO: initialize layout, title, summary, createdAt, etc.
 yfm
   .writeString(
