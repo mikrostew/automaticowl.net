@@ -16,7 +16,7 @@
     "update-yaml": "node scripts/update-yaml.js"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.1",
+    "@11ty/eleventy": "^0.12.1",
     "@arkweid/lefthook": "^0.7.2",
     "eslint": "^7.22.0",
     "eslint-config-prettier": "^8.1.0",
