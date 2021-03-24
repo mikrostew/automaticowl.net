@@ -7,7 +7,7 @@ category: test
 inProgress: true
 fileLocation: src/test-page.md
 initialCreationDate: Feb 27, 2021
-lastEditDate: Mar 19, 2021
+lastEditDate: Mar 21, 2021
 
 # TODO: this should be part of the post layout or something?
 # where this was published first
@@ -297,6 +297,8 @@ $ cat examples.txt
 Short lines that don't wrap.
 Or shouldn't, anyway.
 ```
+
+Long lines
 
 ```
 Long lines in code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
