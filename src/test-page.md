@@ -7,7 +7,7 @@ category: test
 inProgress: true
 fileLocation: src/test-page.md
 initialCreationDate: Feb 27, 2021
-lastEditDate: Mar 21, 2021
+lastEditDate: Mar 29, 2021
 
 # TODO: this should be part of the post layout or something?
 # where this was published first
@@ -286,8 +286,6 @@ Fusce vel efficitur dolor. Integer volutpat magna vitae arcu vehicula, vel conva
 
 ## Code Blocks
 
-TODO
-
 Inline code should show up nicely when `inlined` like so
 
 No syntax highlighting
@@ -308,7 +306,7 @@ Syntax highlighting
 
 TODO - exercise all code formatting
 
-Javascript with syntax highlighting (and file name):
+TODO: Javascript with syntax highlighting (and file name):
 
 @@CODEFILE syntax-highlight.js
 ```js
@@ -338,7 +336,7 @@ function foo(o) { var x = o.x, y = o.y; .. }; foo( {y:5,x:10} );
 function foo({x,y}) { .. }; foo( {y:5,x:10} );
 ```
 
-Ruby with syntax highlighting (with text above the code):
+TODO: Ruby with syntax highlighting (with text above the code):
 
 @@CODETEXT Some ruby code
 ```ruby
@@ -360,6 +358,7 @@ end
 ```
 
 Some bash with syntax highlighting (no header):
+
 ```bash
 #!/usr/bin/env bash
 # Count lines of code for the input files
@@ -392,21 +391,33 @@ echo "No comments    : $num_lines_no_comments"
 
 Inside blockquotes
 
-TODO
+> For code blocks with no syntax highlighting I can indent by 4 spaces
+>
+>     #!/usr/bin/env bash
+>     # Do things
+>     cat emoji.jpg | tr 'a' 'b' | grep -F cats
+>
+> For syntax highlighting I can use a fenced code block
+>
+> ```bash
+> #!/usr/bin/env bash
+> # Do things
+> cat emoji.jpg | tr 'a' 'b' | grep -F cats
+> ```
+>
+> And all of that should just work
 
 
 In a list
 
-TODO
-
 1.  Open the file.
 2.  Find the following code block on line 21:
-
-        <html>
-          <head>
-            <title>Test</title>
-          </head>
-
+    ```html
+    <html>
+      <head>
+        <title>Test</title>
+      </head>
+    ```
 3.  Update the title to match the name of your website.
 
 
@@ -419,40 +430,36 @@ Ordered Lists
 2. This is an ordered list following a header.
 3. This is an ordered list following a header.
 
+(using all the same number)
+
 1. Item one
 1. Item two
 1. Item three
 1. Item four
 
-TODO
-
 
 Unordered Lists
-
-* This is an unordered list following a header.
-* This is an unordered list following a header.
-* This is an unordered list following a header.
 
 * Item foo
 * Item bar
 * Item baz
 * Item zip
 
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
+(multi level)
 
-TODO
+- level 1 item
+  - level 2 item
+  - level 2 item
+    - level 3 item
+    - level 3 item
+- level 1 item
+  - level 2 item
+  - level 2 item
+  - level 2 item
+- level 1 item
+  - level 2 item
+  - level 2 item
+- level 1 item
 
 Mixed
 
@@ -466,27 +473,24 @@ Mixed
 Definition lists
 
 <dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
+<dt>Color</dt><dd>Yellow</dd>
+<dt>Name</dt><dd>Barry</dd>
+<dt>Type</dt><dd>Banana</dd>
 </dl>
 
 
 ## Tables
 
+TODO
+
 Table formatting:
 
-| head1        | head two          | three |
+| header 1     | header 2          | three |
 |:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good oreos        | hmm   |
-| ok           | good zoute drop   | yumm  |
+| ok        | broccoli  | vegetable  |
+| not ok  | celery   | vegetable  |
+| ok        | banana | fruit   |
+| ok        | pencil | stationary  |
 
 
 
@@ -514,7 +518,7 @@ With a tooltip
 
 TODO
 
-My favorite search engine is [Duck Duck Go](https://duckduckgo.com "The best search engine for privacy").
+I like [Duck Duck Go](https://duckduckgo.com "The best search engine for privacy")
 
 
 Images in a list
@@ -523,7 +527,5 @@ TODO
 
 1.  Open the file containing the Linux mascot.
 2.  Marvel at its beauty.
-
     ![Tux, the Linux mascot](/assets/images/tux.png)
-
 3.  Close the file.
