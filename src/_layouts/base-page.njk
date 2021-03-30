@@ -4,7 +4,7 @@ title: Automatic Owl
 
 #### Things that should not be overridden
 # for automatic-owl-logo.svg
-owlLogoSize: 32px
+owlLogoSize: 48px
 
 ---
 <!doctype html>
@@ -30,8 +30,7 @@ owlLogoSize: 32px
       </header>
 {{ content | safe }}
       <footer>
-      <!-- TODO: flex layout here -->
-{% include "svg/automatic-owl-logo.svg" %}
+        <a href="/">{% include "svg/automatic-owl-logo.svg" %}</a>
       </footer>
     </article>
   </body>

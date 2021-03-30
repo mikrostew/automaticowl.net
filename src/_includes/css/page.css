@@ -75,3 +75,10 @@ h2 {
 h3 {
   color: #CE9F79;
 }
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 2em;
+  padding-bottom: 1em;
+}
