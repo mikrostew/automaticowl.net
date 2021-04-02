@@ -481,9 +481,7 @@ Definition lists
 
 ## Tables
 
-TODO
-
-Table formatting:
+TODO: Table formatting
 
 | header 1     | header 2          | three |
 |:-------------|:------------------|:------|
@@ -493,39 +491,26 @@ Table formatting:
 | ok        | pencil | stationary  |
 
 
-
 ## Images
 
-TODO
+TODO: Small image should be centered, for all widths
 
-Should be centered, for all widths
+![small image](/img/bidoof.png)
+<div class="caption">bidoof</div>
 
-![small image](/images/theme-small-image.png) @@CAPTION bidoof
+TODO: Large image should be centered, and full-width
 
+![large image](/img/github.png)
+<div class="caption">This is how github works?</div>
 
-And can be displayed without a shadow box
+TODO: With a tooltip
 
-@@NOSHADOW ![small image](/images/theme-small-image.png) @@CAPTION bidoof bidoof
-
-Large image
-
-Should be centered, and full-width
-
-![large image](/images/theme-large-image.png) @@CAPTION This is how github works?
+![bidoof bidoof](/img/bidoof.png "bidoof bidoof")
 
 
-With a tooltip
+TODO: Image in a list
 
-TODO
-
-I like [Duck Duck Go](https://duckduckgo.com "The best search engine for privacy")
-
-
-Images in a list
-
-TODO
-
-1.  Open the file containing the Linux mascot.
-2.  Marvel at its beauty.
-    ![Tux, the Linux mascot](/assets/images/tux.png)
-3.  Close the file.
+1.  Here is a list
+2.  A pokemon appears!
+    ![bidoof bidoof bidoof](/img/bidoof.png)
+3.  Oh, it's only bidoof.
