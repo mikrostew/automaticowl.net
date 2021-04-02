@@ -7,7 +7,7 @@ category: test
 inProgress: true
 fileLocation: src/test-page.md
 initialCreationDate: Feb 27, 2021
-lastEditDate: Mar 29, 2021
+lastEditDate: Apr 2, 2021
 
 # TODO: this should be part of the post layout or something?
 # where this was published first
@@ -89,13 +89,9 @@ With other elements
 
 Inside a list
 
-TODO
-
 *   This is the first list item.
 *   Here's the second list item.
-
     > A blockquote would look great below the second list item.
-
 *   And here's the third list item.
 
 
@@ -256,9 +252,13 @@ Multiple footnotes should show up in a row[^footnote1] [^footnote2]
 
 ## Horizontal Rules
 
-TODO
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Fusce vel efficitur dolor. Integer volutpat magna vitae arcu vehicula, vel convallis arcu vehicula.
 
 ******
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Fusce vel efficitur dolor. Integer volutpat magna vitae arcu vehicula, vel convallis arcu vehicula. Vivamus cursus ligula at elit feugiat, et suscipit magna venenatis.
 
 
 ## Links

@@ -76,6 +76,23 @@ h3 {
   color: #CE9F79;
 }
 
+hr {
+  margin: 2em 0;
+  color: var(--text-color);
+}
+
+/* replace HR with asterisks */
+hr:not(.footnotes-sep) {
+  border: 0;
+}
+hr:not(.footnotes-sep)::before {
+  /* content: "\2042"; asterism, but I don't like the look */
+  content: '* * *';
+  font-size: 28px;
+  display: block;
+  text-align: center;
+}
+
 footer {
   display: flex;
   justify-content: center;
