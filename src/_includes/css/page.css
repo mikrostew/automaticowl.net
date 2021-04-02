@@ -99,3 +99,7 @@ footer {
   padding-top: 2em;
   padding-bottom: 1em;
 }
+
+.footnote-backref {
+  font-size: 12px;
+}
