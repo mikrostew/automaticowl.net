@@ -96,14 +96,14 @@ I roll my own CSS (no libraries, thanks, although [Tufte CSS](https://edwardtuft
 
 ### Linting & Formatting
 
-I use [lefthook](https://github.com/Arkweid/lefthook) to run [git hooks](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks) for pre-commit that run linting and formatting:
+JavaScript linting with [ESLint](https://github.com/eslint/eslint), and [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier)
 
-- JavaScript linting with [ESLint](https://github.com/eslint/eslint), and [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier)
-- JavaScript formatting with [prettier](https://github.com/prettier/prettier)
+JavaScript formatting with [prettier](https://github.com/prettier/prettier)
 
-I previously used [husky](https://github.com/typicode/husky) and [listr](https://github.com/SamVerschueren/listr) for these checks, but I found that lefthook is faster, and easier to configure.
-
-I also tried using prettier for MarkDown files, but it screws up some non-standard things, like footnotes with multiple sections.
+I previously tried:
+- [lefthook](https://github.com/Arkweid/lefthook) to run [git hooks](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks) for pre-commit that run linting and formatting, but then I set vim up to run them, which is nicer
+- [husky](https://github.com/typicode/husky) and [listr](https://github.com/SamVerschueren/listr) for these checks, but I found that lefthook is faster, and easier to configure.
+- prettier for MarkDown files, but it screws up some non-standard things, like footnotes with multiple sections
 
 
 ## TODOs

@@ -17,7 +17,6 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
-    "@arkweid/lefthook": "^0.7.2",
     "eslint": "^7.22.0",
     "eslint-config-prettier": "^8.1.0",
     "markdown-it": "^12.0.4",
