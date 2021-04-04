@@ -60,6 +60,9 @@ p {
   margin: 0px 15px;
 }
 
+div.center {
+  text-align: center;
+}
 
 h1 {
   text-align: center;
@@ -91,6 +94,15 @@ hr:not(.footnotes-sep)::before {
   font-size: 28px;
   display: block;
   text-align: center;
+}
+
+article img {
+  max-width: 720px;
+}
+
+.caption {
+  font-style: italic;
+  margin: 0 0 1em 0;
 }
 
 footer {

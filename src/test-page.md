@@ -7,7 +7,7 @@ category: test
 inProgress: true
 fileLocation: src/test-page.md
 initialCreationDate: Feb 27, 2021
-lastEditDate: Apr 2, 2021
+lastEditDate: Apr 3, 2021
 
 # TODO: this should be part of the post layout or something?
 # where this was published first
@@ -483,8 +483,8 @@ Definition lists
 
 TODO: Table formatting
 
-| header 1     | header 2          | three |
-|:-------------|:------------------|:------|
+| header 1     | header 2      | three |
+|:------------|:-----------|:------|
 | ok        | broccoli  | vegetable  |
 | not ok  | celery   | vegetable  |
 | ok        | banana | fruit   |
@@ -493,24 +493,30 @@ TODO: Table formatting
 
 ## Images
 
-TODO: Small image should be centered, for all widths
+By default, images will be left-aligned
 
 ![small image](/img/bidoof.png)
-<div class="caption">bidoof</div>
+<p class="caption">bidoof on the left</div>
 
-TODO: Large image should be centered, and full-width
+Small images can be centered, for all widths
+
+<div class="center">
+
+![small image](/img/bidoof.png)
+<p class="caption">bidoof in the center</div>
+</div>
+
+Large image should be centered, and will be full-width
+
+<div class="center">
 
 ![large image](/img/github.png)
-<div class="caption">This is how github works?</div>
+<p class="caption">This is how github works?</div>
+</div>
 
-TODO: With a tooltip
-
-![bidoof bidoof](/img/bidoof.png "bidoof bidoof")
-
-
-TODO: Image in a list
+Image in a list
 
 1.  Here is a list
-2.  A pokemon appears!
+2.  A pokemon appears!<br>
     ![bidoof bidoof bidoof](/img/bidoof.png)
 3.  Oh, it's only bidoof.
