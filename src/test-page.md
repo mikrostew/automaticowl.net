@@ -1,18 +1,21 @@
 ---
-title: Page to check CSS theme
-category: notes
-subtitle: "A page containing all the formatting I use, to check that I haven't
-  messed things up when changing CSS."
 layout: post
+title: Test Page
+summary: A page containing all the formatting I use, to make sure the theme
+  looks right, and check that I haven't regressed when refactoring CSS.
+category: test
+inProgress: true
+fileLocation: src/test-page.md
+initialCreationDate: Feb 27, 2021
+lastEditDate: Apr 3, 2021
 
-# TODO: change this to last-edit? do I even need it at all? it is kinda nice to have...
-last_edit: 2019-07-18
-
+# TODO: this should be part of the post layout or something?
 # where this was published first
 original-publish:
   text: MySpace
   url: https://www.myspace.com/
 
+# TODO: this should be part of the post layout or something?
 # where this was syndicated to, for discussion/comments/etc.
 comments:
   - data:
@@ -25,79 +28,285 @@ comments:
 # opt out of collections
 eleventyExcludeFromCollections: true
 
-lastEditDate: Feb 27, 2021
-fileLocation: src/test-page.md
-
 ---
 
-@@BLOCK-INFO
-> The built-in themes on Github Pages use a standard file to demonstrate their styles. For example, [modernist theme](https://pages-themes.github.io/modernist/).
+## Section Heading
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel efficitur dolor. Integer volutpat magna vitae arcu vehicula, vel convallis arcu vehicula. Vivamus cursus ligula at elit feugiat, et suscipit magna venenatis.
+
+### Subsection One
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel efficitur dolor. Integer volutpat magna vitae arcu vehicula, vel convallis arcu vehicula. Vivamus cursus ligula at elit feugiat, et suscipit magna venenatis. Aliquam ut lectus dignissim, accumsan ipsum at, volutpat mi.
+
+### Subsection Two
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel efficitur dolor. Integer volutpat magna vitae arcu vehicula, vel convallis arcu vehicula.
+
+
+## Emphasis
+
+Lorem ipsum **dolor sit** amet, consectetur adipiscing elit.
+
+Lorem ipsum dolor sit amet, _consectetur_ adipiscing elit.
+
+Lorem ipsum dolor ~~sit amet~~, consectetur adipiscing elit.
+
+Lorem ipsum dolor sit amet, CONSECTETUR adipiscing elit.
+
+
+## Small Caps
+
+I only really use this in the header, but eventually might use it somewhere else?
+
+<p class="header-link">Small Caps</p>
+
+
+## Blockquotes
+
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel efficitur dolor. Integer volutpat magna vitae arcu vehicula, vel convallis arcu vehicula.
+
+Multiple paragraphs
+
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel efficitur dolor.
 >
-> I took that file, made some changes, and find it to be a good reference when changing CSS or adding features (to make sure I haven't screwed anything up).
-
-After that is a HR:
-
-@@NOTE: this was changed to 6 asterisks so it renders correctly in vim
-
-******
+> Integer volutpat magna vitae arcu vehicula, vel convallis arcu vehicula. Vivamus cursus ligula at elit feugiat, et suscipit magna venenatis. Aliquam ut lectus dignissim, accumsan ipsum at, volutpat mi. Pellentesque a elit ut enim tristique egestas.
 
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+Nested
 
-[Link to another page](/).
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel efficitur dolor. Integer volutpat magna vitae arcu vehicula, vel convallis arcu vehicula. Vivamus cursus ligula at elit feugiat, et suscipit magna venenatis.
+>
+>> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel efficitur dolor. Integer volutpat magna vitae arcu vehicula, vel convallis arcu vehicula. Vivamus cursus ligula at elit feugiat, et suscipit magna venenatis.
 
-There should be whitespace between paragraphs.
+With other elements
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+> ### Lorem ipsum
+>
+> - dolor sit amet
+> - consectetur adipiscing elit
+>
+> *Fusce vel* efficitur dolor. Integer **volutpat** magna vitae arcu vehicula, vel convallis arcu vehicula.
 
-### footnotes
+Inside a list
+
+*   This is the first list item.
+*   Here's the second list item.
+    > A blockquote would look great below the second list item.
+*   And here's the third list item.
+
+
+## Epigraphs
+
+<div class="epigraph">
+
+> A little learning is a dangerous thing;<br>
+> Drink deep, or taste not the Pierian spring.<br>
+> There shallow draughts intoxicate the brain,<br>
+> And drinking largely sobers us again.<br>
+>
+> Alexander Pope, "[A Little Learning](https://www.poetsgraves.co.uk/Classic%20Poems/Pope/a_little_learning.htm)"
+
+</div>
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel efficitur dolor. Integer volutpat magna vitae arcu vehicula, vel convallis arcu vehicula. Vivamus cursus ligula at elit feugiat, et suscipit magna venenatis.
+
+<div class="epigraph">
+
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel efficitur dolor. Integer volutpat magna vitae arcu vehicula, vel convallis arcu vehicula. Vivamus cursus ligula at elit feugiat, et suscipit magna venenatis.
+>
+> Lorem Ipsum
+
+</div>
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel efficitur dolor. Integer volutpat magna vitae arcu vehicula, vel convallis arcu vehicula. Vivamus cursus ligula at elit feugiat, et suscipit magna venenatis.
+
+
+## Info Blocks
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel efficitur dolor. Integer volutpat magna vitae arcu vehicula, vel convallis arcu vehicula. Vivamus cursus ligula at elit feugiat, et suscipit magna venenatis.
+
+<div class="info tip">
+
+**Tip with a title.**
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel efficitur dolor. Integer volutpat magna vitae arcu vehicula, vel convallis arcu vehicula. Vivamus cursus ligula at elit feugiat, et suscipit magna venenatis.
+
+</div>
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel efficitur dolor. Integer volutpat magna vitae arcu vehicula, vel convallis arcu vehicula. Vivamus cursus ligula at elit feugiat, et suscipit magna venenatis.
+
+<div class="info tip">
+
+Tip on a single line.
+
+</div>
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel efficitur dolor. Integer volutpat magna vitae arcu vehicula, vel convallis arcu vehicula. Vivamus cursus ligula at elit feugiat, et suscipit magna venenatis.
+
+<div class="info tip">
+
+Tip with multiple lines. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel efficitur dolor. Integer volutpat magna vitae arcu vehicula, vel convallis arcu vehicula. Vivamus cursus ligula at elit feugiat, et suscipit magna venenatis.
+
+</div>
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel efficitur dolor. Integer volutpat magna vitae arcu vehicula, vel convallis arcu vehicula. Vivamus cursus ligula at elit feugiat, et suscipit magna venenatis.
+
+<div class="info note">
+
+**Note with a title.**
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel efficitur dolor. Integer volutpat magna vitae arcu vehicula, vel convallis arcu vehicula. Vivamus cursus ligula at elit feugiat, et suscipit magna venenatis.
+
+</div>
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel efficitur dolor. Integer volutpat magna vitae arcu vehicula, vel convallis arcu vehicula. Vivamus cursus ligula at elit feugiat, et suscipit magna venenatis.
+
+<div class="info note">
+
+Note on a single line.
+
+</div>
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel efficitur dolor. Integer volutpat magna vitae arcu vehicula, vel convallis arcu vehicula. Vivamus cursus ligula at elit feugiat, et suscipit magna venenatis.
+
+<div class="info note">
+
+Note with multiple lines. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel efficitur dolor. Integer volutpat magna vitae arcu vehicula, vel convallis arcu vehicula. Vivamus cursus ligula at elit feugiat, et suscipit magna venenatis.
+
+</div>
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel efficitur dolor. Integer volutpat magna vitae arcu vehicula, vel convallis arcu vehicula. Vivamus cursus ligula at elit feugiat, et suscipit magna venenatis.
+
+<div class="info warn">
+
+**Warning with a title.**
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel efficitur dolor. Integer volutpat magna vitae arcu vehicula, vel convallis arcu vehicula. Vivamus cursus ligula at elit feugiat, et suscipit magna venenatis.
+
+</div>
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel efficitur dolor. Integer volutpat magna vitae arcu vehicula, vel convallis arcu vehicula. Vivamus cursus ligula at elit feugiat, et suscipit magna venenatis.
+
+<div class="info warn">
+
+Warning on a single line.
+
+</div>
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel efficitur dolor. Integer volutpat magna vitae arcu vehicula, vel convallis arcu vehicula. Vivamus cursus ligula at elit feugiat, et suscipit magna venenatis.
+
+<div class="info warn">
+
+Warning with multiple lines. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel efficitur dolor. Integer volutpat magna vitae arcu vehicula, vel convallis arcu vehicula. Vivamus cursus ligula at elit feugiat, et suscipit magna venenatis.
+
+</div>
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel efficitur dolor. Integer volutpat magna vitae arcu vehicula, vel convallis arcu vehicula. Vivamus cursus ligula at elit feugiat, et suscipit magna venenatis.
+
+<div class="info error">
+
+**Error with a title.**
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel efficitur dolor. Integer volutpat magna vitae arcu vehicula, vel convallis arcu vehicula. Vivamus cursus ligula at elit feugiat, et suscipit magna venenatis.
+
+</div>
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel efficitur dolor. Integer volutpat magna vitae arcu vehicula, vel convallis arcu vehicula. Vivamus cursus ligula at elit feugiat, et suscipit magna venenatis.
+
+<div class="info error">
+
+Error on a single line.
+
+</div>
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel efficitur dolor. Integer volutpat magna vitae arcu vehicula, vel convallis arcu vehicula. Vivamus cursus ligula at elit feugiat, et suscipit magna venenatis.
+
+<div class="info error">
+
+Error with multiple lines. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel efficitur dolor. Integer volutpat magna vitae arcu vehicula, vel convallis arcu vehicula. Vivamus cursus ligula at elit feugiat, et suscipit magna venenatis.
+
+</div>
+
+
+## Footnotes
 
 Footnotes[^examplecom] should show up correctly[^footnotescom].
 
-# Header 1 ([link](/))
+Multiple footnotes should show up in a row[^footnote1] [^footnote2]
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+[^footnotescom]: You _may_ want to check out the Footnote Fanatics at [http://footnotes.com](http://footnotes.com). I don’t actually know what this site is but it seems appropriate.
 
-## Header 2 ([link](/))
+[^examplecom]: You should visit [https://example.com](https://example.com).
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+[^footnote1]: Here is a footnote with a blockquote.
 
-Indicating that something is OK:
+    > Blockquotes should work inside of footnotes.
 
-@@BLOCK-APPROVE
-> Not sure that I would use this much...
+[^footnote2]: And another footnote with a code block.
 
-Or giving some info:
-
-@@BLOCK-INFO
-> **You should note this.**<br>
-> Long lines should look right if they go all the way over to the right side of this box and run up against the edge.
-
-Or providing a warning:
-
-@@BLOCK-WARN
-> Don't tell me you weren't warned...
->
-> This should handle multiple paragraphs too
-
-Or showing an error:
-
-@@BLOCK-ERROR
-> **Error! Error! Abandon ship!**
->
-> Kidding, it's fine
-
-Or indicating where I took notes from:
-
-@@BLOCK-NOTE
-> Notes taken from [some video](https://www.youtube.com) on YouTube
+    ```
+    #!/usr/bin/env bash
+    rm -rf /
+    ```
 
 
-### Header 3 ([link](/))
+## Horizontal Rules
 
-Javascript with syntax highlighting (and file name):
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Fusce vel efficitur dolor. Integer volutpat magna vitae arcu vehicula, vel convallis arcu vehicula.
+
+******
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Fusce vel efficitur dolor. Integer volutpat magna vitae arcu vehicula, vel convallis arcu vehicula. Vivamus cursus ligula at elit feugiat, et suscipit magna venenatis.
+
+
+## Links
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+[Link to another page](/).
+Fusce vel efficitur dolor. Integer volutpat magna vitae arcu vehicula, vel convallis arcu vehicula. Vivamus cursus ligula at elit feugiat, et suscipit magna venenatis.
+
+URLs and emails
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+<https://www.markdownguide.org>
+Fusce vel efficitur dolor. Integer volutpat magna vitae arcu vehicula, vel convallis arcu vehicula.
+<fake@example.com>
+Vivamus cursus ligula at elit feugiat, et suscipit magna venenatis.
+
+Reference style
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+[wikipedia][1]
+Fusce vel efficitur dolor. Integer volutpat magna vitae arcu vehicula, vel convallis arcu vehicula. Vivamus cursus ligula at elit feugiat, et suscipit magna venenatis.
+
+[1]: <https://en.wikipedia.org/> "Wikipedia"
+
+
+## Code Blocks
+
+Inline code should show up nicely when `inlined` like so
+
+No syntax highlighting
+
+```
+$ cat examples.txt
+Short lines that don't wrap.
+Or shouldn't, anyway.
+```
+
+Long lines
+
+```
+Long lines in code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
+```
+
+Syntax highlighting
+
+TODO - exercise all code formatting
+
+TODO: Javascript with syntax highlighting (and file name):
 
 @@CODEFILE syntax-highlight.js
 ```js
@@ -127,7 +336,7 @@ function foo(o) { var x = o.x, y = o.y; .. }; foo( {y:5,x:10} );
 function foo({x,y}) { .. }; foo( {y:5,x:10} );
 ```
 
-Ruby with syntax highlighting (with text above the code):
+TODO: Ruby with syntax highlighting (with text above the code):
 
 @@CODETEXT Some ruby code
 ```ruby
@@ -149,6 +358,7 @@ end
 ```
 
 Some bash with syntax highlighting (no header):
+
 ```bash
 #!/usr/bin/env bash
 # Count lines of code for the input files
@@ -179,60 +389,63 @@ echo "No empty lines : $num_lines_no_blank"
 echo "No comments    : $num_lines_no_comments"
 ```
 
-Code with no syntax highlighting:
+Inside blockquotes
 
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
+> For code blocks with no syntax highlighting I can indent by 4 spaces
+>
+>     #!/usr/bin/env bash
+>     # Do things
+>     cat emoji.jpg | tr 'a' 'b' | grep -F cats
+>
+> For syntax highlighting I can use a fenced code block
+>
+> ```bash
+> #!/usr/bin/env bash
+> # Do things
+> cat emoji.jpg | tr 'a' 'b' | grep -F cats
+> ```
+>
+> And all of that should just work
 
-```
-$ cat examples.txt
-Short lines that don't wrap.
-Or shouldn't, anyway.
-```
 
-#### Header 4 ([link](/))
+In a list
 
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
+1.  Open the file.
+2.  Find the following code block on line 21:
+    ```html
+    <html>
+      <head>
+        <title>Test</title>
+      </head>
+    ```
+3.  Update the title to match the name of your website.
 
-##### Header 5 ([link](/))
 
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
 
-###### Header 6 ([link](/))
+## Lists
 
-Table formatting:
+Ordered Lists
 
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
+1. This is an ordered list following a header.
+2. This is an ordered list following a header.
+3. This is an ordered list following a header.
 
-### There's a horizontal rule below this.
+(using all the same number)
 
-***
+1. Item one
+1. Item two
+1. Item three
+1. Item four
 
-### Here is an unordered list:
 
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
+Unordered Lists
 
-### And an ordered list:
+* Item foo
+* Item bar
+* Item baz
+* Item zip
 
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
+(multi level)
 
 - level 1 item
   - level 2 item
@@ -248,38 +461,62 @@ Table formatting:
   - level 2 item
 - level 1 item
 
-### Small image
+Mixed
 
-Should be centered, for all widths
+1. First item
+2. Second item
+3. Third item
+    - Indented item
+    - Indented item
+4. Fourth item
 
-![small image](/images/theme-small-image.png) @@CAPTION bidoof
-
-
-And can be displayed without a shadow box
-
-@@NOSHADOW ![small image](/images/theme-small-image.png) @@CAPTION bidoof bidoof
-
-### Large image
-
-Should be centered, and full-width
-
-![large image](/images/theme-large-image.png) @@CAPTION This is how github works?
-
-
-### Definition lists can be used with HTML syntax.
+Definition lists
 
 <dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
+<dt>Color</dt><dd>Yellow</dd>
+<dt>Name</dt><dd>Barry</dd>
+<dt>Type</dt><dd>Banana</dd>
 </dl>
 
 
-[^footnotescom]: You _may_ want to check out the Footnote Fanatics at [http://footnotes.com](http://footnotes.com). I don’t actually know what this site is but it seems appropriate.
+## Tables
 
-[^examplecom]: You should visit [https://example.com](https://example.com).
+TODO: Table formatting
+
+| header 1     | header 2      | three |
+|:------------|:-----------|:------|
+| ok        | broccoli  | vegetable  |
+| not ok  | celery   | vegetable  |
+| ok        | banana | fruit   |
+| ok        | pencil | stationary  |
+
+
+## Images
+
+By default, images will be left-aligned
+
+![small image](/img/bidoof.png)
+<p class="caption">bidoof on the left</div>
+
+Small images can be centered, for all widths
+
+<div class="center">
+
+![small image](/img/bidoof.png)
+<p class="caption">bidoof in the center</div>
+</div>
+
+Large image should be centered, and will be full-width
+
+<div class="center">
+
+![large image](/img/github.png)
+<p class="caption">This is how github works?</div>
+</div>
+
+Image in a list
+
+1.  Here is a list
+2.  A pokemon appears!<br>
+    ![bidoof bidoof bidoof](/img/bidoof.png)
+3.  Oh, it's only bidoof.

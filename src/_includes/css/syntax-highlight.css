@@ -1,0 +1,68 @@
+/* syntax highlighting */
+/* see https://github.com/PrismJS/prism-themes for the options for these themes */
+
+/* general code style */
+code {
+	color: var(--text-color);
+  /* TODO: system font mono stack */
+	font-family: monospace;
+	white-space: pre;
+	font-size: .9em;
+	line-height: 1.1em;
+  /* prevent hyphenation */
+	hyphens: none;
+}
+
+/* code blocks */
+pre {
+	padding: .5em 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border: 1px solid var(--text-color-alt);
+	background-color: white;
+}
+
+/* inlined code */
+:not(pre) > code {
+	padding: .1em .2em;
+	background: white;
+	border: 1px solid var(--text-color-alt);
+}
+
+/* syntax - all the same thing for now */
+.token.atrule,
+.token.attr-name,
+.token.attr-value,
+.token.bold,
+.token.boolean,
+.token.cdata,
+.token.comment,
+.token.constant,
+.token.deleted,
+.token.doctype,
+.token.entity,
+.token.function,
+.token.function,
+.token.important,
+.token.inserted,
+.token.italic,
+.token.keyword,
+.language-autohotkey .token.keyword,
+.token.namespace,
+.token.number,
+.token.operator,
+.token.prolog,
+.token.property,
+.token.punctuation,
+.token.regex,
+.token.selector,
+.language-autohotkey .token.selector,
+.token.shebang,
+.token.string,
+.token.symbol,
+.token.tag,
+.language-autohotkey .token.tag,
+.token.url,
+.token.variable {
+	color: var(--text-color);
+}

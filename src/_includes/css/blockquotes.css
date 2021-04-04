@@ -21,12 +21,43 @@ blockquote::before {
   content: "";
 }
 
-/* warning icon */
-.warning > blockquote::before {
-  position: absolute;
-  left: 10px;
-  top: 6px;
-  content: "!";
-  font-size: 64px;
+/* info blocks are kinda sorta blockquotes */
+/* TODO: should they be their own file? */
+.info {
+  position: relative;
+  /* top right bottom left */
+  margin: 1em 0 1em 0;
+  padding: 1em 1em 1em 3em;
+  background-color: #ffffff;
+  border: 1px solid var(--text-color-alt);
+  border-radius: 8px;
 }
 
+.info::before {
+  width: 2.875em;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: .75em;
+  box-sizing: border-box;
+  /* color: var(--text-color-alt); */
+}
+
+.info p:last-child {
+  margin-bottom: 0;
+}
+
+/* icons for these blocks */
+.info.tip::before {
+  content: url(/img/icons/info-tip.svg);
+}
+.info.note::before {
+  content: url(/img/icons/info-note.svg);
+}
+.info.warn::before {
+  content: url(/img/icons/info-warn.svg);
+}
+.info.error::before {
+  content: url(/img/icons/info-error.svg);
+}
