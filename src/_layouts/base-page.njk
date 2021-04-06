@@ -1,6 +1,9 @@
 ---
 #### Things that should be overridden by the page
 title: Automatic Owl
+description: TODO
+summary: TODO - same as description?
+image: TODO - link to image - fully qualified?
 
 #### Things that should not be overridden
 # for automatic-owl-logo.svg
@@ -10,9 +13,26 @@ owlLogoSize: 48px
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <!-- notice me, SEO senpai -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }} | Automatic Owl</title>
+    <meta name="description" content="{{ description }}">
+    <!-- twitter -->
+    <meta name="twitter:card" content="{{ summary }}">
+    <meta name="twitter:site" content="@mikrostew">
+    <meta name="twitter:title" content="{{ title }} | Automatic Owl">
+    <meta name="twitter:description" content="{{ description }}">
+    <meta name="twitter:creator" content="@mikrostew">
+    <meta name="twitter:image" content="{{ image }}">
+    <!-- open graph -->
+    <meta property="og:title" content="{{ title }} | Automatic Owl" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="TODO" />
+    <meta property="og:image" content="{{ image }}" />
+    <meta property="og:description" content="{{ description }}" />
+    <meta property="og:site_name" content="Automatic Owl" />
+
     <link rel="stylesheet" type="text/css" href="/automaticowl.css" />
   </head>
   <body>
