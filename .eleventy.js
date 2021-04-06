@@ -4,6 +4,9 @@ const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 module.exports = function (eleventyConfig) {
   // copy `img/` to `_site/img`
   eleventyConfig.addPassthroughCopy('img');
+  // make sure favicon is copied over
+  // (doesn't seem to be automatic)
+  eleventyConfig.addPassthroughCopy('src/favicon.ico');
 
   // syntax highighting
   eleventyConfig.addPlugin(syntaxHighlight);
